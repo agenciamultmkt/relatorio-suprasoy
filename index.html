@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SupraSoy × Guanabara — Painel de Degustação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-texture" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand-lockup">
+      <img src="assets/logo-suprasoy.jpg" alt="SupraSoy" class="logo logo-supra">
+      <div class="brand-divider" aria-hidden="true"></div>
+      <img src="assets/logo-mult.png" alt="Agência Mult" class="logo logo-mult">
+    </div>
+    <div class="topbar-meta">
+      <span class="eyebrow">Painel consolidado</span>
+      <span class="updated" id="lastUpdated">—</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Guanabara Barra &amp; Recreio</p>
+      <h1>Ação de degustação<br><span class="hero-accent">semana a semana.</span></h1>
+      <p class="hero-sub">Cada número aqui começou como um traço no papel de uma promotora, na loja, contando pote a pote. Este painel junta essa contagem de campo com o estoque real do ponto de venda — para separar o que foi <em>anunciado</em> do que foi <em>vendido de fato</em>.</p>
+    </div>
+    <div class="hero-tally" aria-hidden="true">
+      <div class="tally-row"><span class="tally-mark"></span><span class="tally-mark"></span><span class="tally-mark"></span><span class="tally-mark"></span><span class="tally-mark cross"></span></div>
+      <div class="tally-row"><span class="tally-mark"></span><span class="tally-mark"></span><span class="tally-mark"></span></div>
+      <div class="tally-caption">311 dias de campanha, contados um a um</div>
+    </div>
+  </section>
+
+  <section class="controls" id="controls">
+    <div class="control-group" role="group" aria-label="Filtrar por loja">
+      <span class="control-label">Loja</span>
+      <div class="pill-group" id="storeFilter">
+        <button class="pill active" data-store="all">Todas</button>
+        <button class="pill" data-store="barra">Barra</button>
+        <button class="pill" data-store="recreio">Recreio</button>
+      </div>
+    </div>
+    <div class="control-group" role="group" aria-label="Filtrar por período">
+      <span class="control-label">Período</span>
+      <div class="pill-group" id="periodFilter">
+        <button class="pill active" data-period="all">Ação completa</button>
+        <button class="pill" data-period="jul">Julho</button>
+        <button class="pill" data-period="ago">Agosto</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="kpis" id="kpiSection">
+    <div class="kpi-card" id="kpiVendas">
+      <span class="kpi-label">Vendas reais</span>
+      <span class="kpi-value"><span class="kpi-number">—</span></span>
+      <span class="kpi-sub">unidades no período · estoque inicial − final</span>
+    </div>
+    <div class="kpi-card" id="kpiAbordagens">
+      <span class="kpi-label">Abordagens registradas</span>
+      <span class="kpi-value"><span class="kpi-number">—</span></span>
+      <span class="kpi-sub" id="kpiAbordagensSub">consumidores abordados pelas promotoras</span>
+    </div>
+    <div class="kpi-card" id="kpiPrevisao">
+      <span class="kpi-label">Previsão das promotoras</span>
+      <span class="kpi-value"><span class="kpi-number">—</span></span>
+      <span class="kpi-sub">estimativa em campo, sem descontar desistência</span>
+    </div>
+    <div class="kpi-card" id="kpiGap">
+      <span class="kpi-label">Gap previsão → real</span>
+      <span class="kpi-value"><span class="kpi-number">—</span></span>
+      <span class="kpi-sub">quanto a previsão superestimou a venda</span>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>Evolução semanal — vendas reais</h2>
+      <p class="panel-sub">Cada barra é uma semana de contagem de estoque (terça a segunda). Passe o mouse para ver o detalhe por SKU.</p>
+    </div>
+    <div class="chart-box chart-tall">
+      <canvas id="chartWeekly"></canvas>
+    </div>
+  </section>
+
+  <section class="two-col">
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Mix de produto</h2>
+        <p class="panel-sub">Participação de cada SKU no total vendido, no período filtrado.</p>
+      </div>
+      <div class="chart-box">
+        <canvas id="chartMix"></canvas>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Previsão × Real, por semana</h2>
+        <p class="panel-sub">A previsão soma só os dias em que o formulário foi respondido naquela semana — em semanas com cobertura parcial, o valor fica artificialmente baixo (não é sinal de subestimação real). Barras cinzas: nenhum formulário preenchido naquela semana/loja.</p>
+      </div>
+      <div class="chart-box">
+        <canvas id="chartForecast"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>Cobertura diária</h2>
+      <p class="panel-sub">Um quadrado por dia de campanha. Amarelo = sem abordagem (domingo, feriado ou pausa). Passe o mouse para o motivo.</p>
+    </div>
+    <div class="legend-row">
+      <span class="legend-item"><span class="legend-swatch swatch-ok"></span>Com abordagem</span>
+      <span class="legend-item"><span class="legend-swatch swatch-off"></span>Sem abordagem</span>
+      <span class="legend-item"><span class="legend-swatch swatch-pause"></span>Campanha pausada</span>
+    </div>
+    <div id="coverageCalendar" class="coverage-calendar"></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>Detalhamento por semana</h2>
+      <p class="panel-sub">Vendas reais por SKU e por loja, semana a semana desde o início da ação.</p>
+    </div>
+    <div class="table-wrap">
+      <table id="weeklyTable">
+        <thead>
+          <tr>
+            <th>Semana</th>
+            <th>Loja</th>
+            <th>Original</th>
+            <th>Nature</th>
+            <th>Sachê</th>
+            <th>Total</th>
+            <th>Cresc. vs sem. ant.</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel notes-panel">
+    <div class="panel-head">
+      <h2>Como ler estes números</h2>
+    </div>
+    <ul class="notes-list" id="notesList"></ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img src="assets/logo-mult.png" alt="Agência Mult" class="footer-logo">
+    <p>Painel mantido pela Agência Mult · atualizado semanalmente junto ao relatório executivo em PowerPoint.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

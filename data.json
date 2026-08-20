@@ -1,0 +1,876 @@
+{
+  "meta": {
+    "generated": "2026-08-20",
+    "stores": [
+      "barra",
+      "recreio"
+    ],
+    "skus": [
+      "original",
+      "nature",
+      "sache"
+    ],
+    "barra_pause": {
+      "start": "2026-08-01",
+      "end": "2026-08-17"
+    },
+    "notes": [
+      "Vendas reais calculadas a partir de contagem de estoque (inicial - final) informada pelo cliente via WhatsApp.",
+      "Abordagens e previsão de vendas vêm do formulário preenchido pelas promotoras em campo — a previsão NÃO considera desistências no checkout.",
+      "Valores de abordagem marcados como estimados (~50) referem-se a respostas textuais (\"Bastante\") do formulário, convertidas em estimativa aproximada a pedido do cliente.",
+      "A Guanabara Barra ficou sem ação promocional ativa entre 01/08 e 17/08/2026 (retomada em 18/08); vendas reais nesse período vieram de giro de prateleira, sem degustação ativa."
+    ]
+  },
+  "weeks_real": [
+    {
+      "id": "W1",
+      "start": "2026-07-14",
+      "end": "2026-07-20",
+      "label": "14 a 20/07",
+      "barra": {
+        "original": 14,
+        "nature": 2,
+        "sache": 11,
+        "total": 27
+      },
+      "recreio": {
+        "original": 3,
+        "nature": 2,
+        "sache": 19,
+        "total": 24
+      }
+    },
+    {
+      "id": "W2",
+      "start": "2026-07-21",
+      "end": "2026-07-27",
+      "label": "21 a 27/07",
+      "barra": {
+        "original": 15,
+        "nature": 8,
+        "sache": 10,
+        "total": 33
+      },
+      "recreio": {
+        "original": 6,
+        "nature": 5,
+        "sache": 17,
+        "total": 28
+      }
+    },
+    {
+      "id": "W3",
+      "start": "2026-07-28",
+      "end": "2026-08-03",
+      "label": "28/07 a 03/08",
+      "barra": {
+        "original": 13,
+        "nature": 10,
+        "sache": 18,
+        "total": 41
+      },
+      "recreio": {
+        "original": 1,
+        "nature": 3,
+        "sache": 16,
+        "total": 20
+      }
+    },
+    {
+      "id": "W4",
+      "start": "2026-08-04",
+      "end": "2026-08-10",
+      "label": "04 a 10/08",
+      "barra": {
+        "original": 7,
+        "nature": 5,
+        "sache": 11,
+        "total": 23
+      },
+      "recreio": {
+        "original": 6,
+        "nature": 12,
+        "sache": 37,
+        "total": 55
+      }
+    },
+    {
+      "id": "W5",
+      "start": "2026-08-11",
+      "end": "2026-08-17",
+      "label": "11 a 17/08",
+      "barra": {
+        "original": 7,
+        "nature": 5,
+        "sache": 22,
+        "total": 34
+      },
+      "recreio": {
+        "original": 5,
+        "nature": 19,
+        "sache": 6,
+        "total": 30
+      }
+    }
+  ],
+  "daily_coverage": [
+    {
+      "date": "2026-07-28",
+      "store": "barra",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-07-29",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 8
+    },
+    {
+      "date": "2026-07-30",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 7
+    },
+    {
+      "date": "2026-07-31",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 9
+    },
+    {
+      "date": "2026-08-01",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 9
+    },
+    {
+      "date": "2026-08-02",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-03",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 8,
+      "obs": "acumula 02+03/08"
+    },
+    {
+      "date": "2026-08-04",
+      "store": "barra",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-08-05",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 3
+    },
+    {
+      "date": "2026-08-06",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 3
+    },
+    {
+      "date": "2026-08-07",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 5
+    },
+    {
+      "date": "2026-08-08",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 3
+    },
+    {
+      "date": "2026-08-09",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-10",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 9,
+      "obs": "acumula 09+10/08"
+    },
+    {
+      "date": "2026-08-11",
+      "store": "barra",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-08-12",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 8
+    },
+    {
+      "date": "2026-08-13",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 9
+    },
+    {
+      "date": "2026-08-14",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 3
+    },
+    {
+      "date": "2026-08-15",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "feriado"
+    },
+    {
+      "date": "2026-08-16",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-17",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 14,
+      "obs": "acumula 16+17/08"
+    },
+    {
+      "date": "2026-07-28",
+      "store": "recreio",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-07-29",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 0
+    },
+    {
+      "date": "2026-07-30",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 1
+    },
+    {
+      "date": "2026-07-31",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 0
+    },
+    {
+      "date": "2026-08-01",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 15
+    },
+    {
+      "date": "2026-08-02",
+      "store": "recreio",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-03",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 4,
+      "obs": "acumula 02+03/08"
+    },
+    {
+      "date": "2026-08-04",
+      "store": "recreio",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-08-05",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 11
+    },
+    {
+      "date": "2026-08-06",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 13
+    },
+    {
+      "date": "2026-08-07",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 6
+    },
+    {
+      "date": "2026-08-08",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 6
+    },
+    {
+      "date": "2026-08-09",
+      "store": "recreio",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-10",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 19,
+      "obs": "acumula 09+10/08"
+    },
+    {
+      "date": "2026-08-11",
+      "store": "recreio",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-08-12",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 12
+    },
+    {
+      "date": "2026-08-13",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 7
+    },
+    {
+      "date": "2026-08-14",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 4
+    },
+    {
+      "date": "2026-08-15",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 1
+    },
+    {
+      "date": "2026-08-16",
+      "store": "recreio",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-17",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 6,
+      "obs": "acumula 16+17/08"
+    }
+  ],
+  "daily_form": [
+    {
+      "timestamp": "2026-07-08T16:14:52.633000",
+      "date": "2026-07-08",
+      "store": "barra",
+      "demonstrator": "Tamires",
+      "abordagens": 22,
+      "abordagens_estimated": false,
+      "previsao_total": 6,
+      "previsao_sache": 3,
+      "previsao_latas": 3,
+      "obs": "O suprasoy original é mais saboroso"
+    },
+    {
+      "timestamp": "2026-07-08T16:59:31.047000",
+      "date": "2026-07-08",
+      "store": "recreio",
+      "demonstrator": "Andressa Cardoso",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 6,
+      "previsao_sache": 5,
+      "previsao_latas": 1,
+      "obs": "Bom."
+    },
+    {
+      "timestamp": "2026-07-09T16:33:55.169000",
+      "date": "2026-07-09",
+      "store": "barra",
+      "demonstrator": "Tamires",
+      "abordagens": 17,
+      "abordagens_estimated": false,
+      "previsao_total": 9,
+      "previsao_sache": 5,
+      "previsao_latas": 4,
+      "obs": "Sentem falta da opção zero açúcar"
+    },
+    {
+      "timestamp": "2026-07-09T16:33:42.949000",
+      "date": "2026-07-09",
+      "store": "recreio",
+      "demonstrator": "Andressa Cardoso",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 14,
+      "previsao_sache": 11,
+      "previsao_latas": 2,
+      "obs": "Bom."
+    },
+    {
+      "timestamp": "2026-07-10T16:47:31.322000",
+      "date": "2026-07-10",
+      "store": "barra",
+      "demonstrator": "Andressa",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 7,
+      "previsao_sache": 5,
+      "previsao_latas": 2,
+      "obs": "Bom"
+    },
+    {
+      "timestamp": "2026-07-11T16:13:45.696000",
+      "date": "2026-07-11",
+      "store": "recreio",
+      "demonstrator": "Tamires Oliveira",
+      "abordagens": 19,
+      "abordagens_estimated": false,
+      "previsao_total": 11,
+      "previsao_sache": 9,
+      "previsao_latas": 2,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-07-15T12:02:24.327000",
+      "date": "2026-07-14",
+      "store": "barra",
+      "demonstrator": "Andressa",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 3,
+      "previsao_sache": 3,
+      "previsao_latas": 0,
+      "obs": "Bom"
+    },
+    {
+      "timestamp": "2026-07-14T16:38:52.666000",
+      "date": "2026-07-14",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 13,
+      "abordagens_estimated": false,
+      "previsao_total": 5,
+      "previsao_sache": 5,
+      "previsao_latas": 0,
+      "obs": "N encontra o produto em Niterói"
+    },
+    {
+      "timestamp": "2026-07-15T16:42:42.670000",
+      "date": "2026-07-15",
+      "store": "barra",
+      "demonstrator": "Andressa",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 4,
+      "previsao_sache": 4,
+      "previsao_latas": 0,
+      "obs": "Bom"
+    },
+    {
+      "timestamp": "2026-07-15T16:39:43.888000",
+      "date": "2026-07-15",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 16,
+      "abordagens_estimated": false,
+      "previsao_total": 8,
+      "previsao_sache": 6,
+      "previsao_latas": 2,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-07-16T16:37:18.212000",
+      "date": "2026-07-16",
+      "store": "barra",
+      "demonstrator": "Andressa",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 3,
+      "previsao_sache": 3,
+      "previsao_latas": 0,
+      "obs": "Bom"
+    },
+    {
+      "timestamp": "2026-07-16T16:55:10.503000",
+      "date": "2026-07-16",
+      "store": "recreio",
+      "demonstrator": "Tamires Oliveira",
+      "abordagens": 11,
+      "abordagens_estimated": false,
+      "previsao_total": 6,
+      "previsao_sache": 4,
+      "previsao_latas": 2,
+      "obs": "Degustação saborosa"
+    },
+    {
+      "timestamp": "2026-07-20T11:40:58.390000",
+      "date": "2026-07-17",
+      "store": "barra",
+      "demonstrator": "Andressa Cardoso",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 5,
+      "previsao_sache": 3,
+      "previsao_latas": 2,
+      "obs": "Bom"
+    },
+    {
+      "timestamp": "2026-07-17T17:20:53.180000",
+      "date": "2026-07-17",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 13,
+      "abordagens_estimated": false,
+      "previsao_total": 5,
+      "previsao_sache": 5,
+      "previsao_latas": 0,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-07-20T11:42:00.614000",
+      "date": "2026-07-18",
+      "store": "barra",
+      "demonstrator": "Andressa Cardoso",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 6,
+      "previsao_sache": 6,
+      "previsao_latas": 0,
+      "obs": "Bom"
+    },
+    {
+      "timestamp": "2026-07-18T16:26:15.504000",
+      "date": "2026-07-18",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 16,
+      "abordagens_estimated": false,
+      "previsao_total": 7,
+      "previsao_sache": 7,
+      "previsao_latas": 0,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-07-22T09:27:45.538000",
+      "date": "2026-07-21",
+      "store": "barra",
+      "demonstrator": "Andressa",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 6,
+      "previsao_sache": 5,
+      "previsao_latas": 1,
+      "obs": "Bom"
+    },
+    {
+      "timestamp": "2026-07-21T17:32:07.881000",
+      "date": "2026-07-21",
+      "store": "recreio",
+      "demonstrator": "Tamires de Oliveira",
+      "abordagens": 9,
+      "abordagens_estimated": false,
+      "previsao_total": 5,
+      "previsao_sache": 3,
+      "previsao_latas": 2,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-07-22T16:19:39.959000",
+      "date": "2026-07-22",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 14,
+      "abordagens_estimated": false,
+      "previsao_total": 6,
+      "previsao_sache": 5,
+      "previsao_latas": 1,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-07-23T19:16:23.393000",
+      "date": "2026-07-23",
+      "store": "barra",
+      "demonstrator": "Andressa",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 6,
+      "previsao_sache": 5,
+      "previsao_latas": 1,
+      "obs": "Bom."
+    },
+    {
+      "timestamp": "2026-07-23T19:14:34.254000",
+      "date": "2026-07-23",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 15,
+      "abordagens_estimated": false,
+      "previsao_total": 5,
+      "previsao_sache": 4,
+      "previsao_latas": 1,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-07-25T11:29:48.792000",
+      "date": "2026-07-24",
+      "store": "barra",
+      "demonstrator": "Andressa",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 3,
+      "previsao_sache": 2,
+      "previsao_latas": 1,
+      "obs": "Bom"
+    },
+    {
+      "timestamp": "2026-07-24T17:21:10.671000",
+      "date": "2026-07-24",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 9,
+      "abordagens_estimated": false,
+      "previsao_total": 4,
+      "previsao_sache": 4,
+      "previsao_latas": 0,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-07-25T18:42:38.017000",
+      "date": "2026-07-25",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 17,
+      "abordagens_estimated": false,
+      "previsao_total": 6,
+      "previsao_sache": 5,
+      "previsao_latas": 1,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-07-28T18:37:50.243000",
+      "date": "2026-07-28",
+      "store": "barra",
+      "demonstrator": "Andressa Cardoso",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 8,
+      "previsao_sache": 8,
+      "previsao_latas": 0,
+      "obs": "Bom, original sendo melhor."
+    },
+    {
+      "timestamp": "2026-07-28T18:29:11.899000",
+      "date": "2026-07-28",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 13,
+      "abordagens_estimated": false,
+      "previsao_total": 3,
+      "previsao_sache": 3,
+      "previsao_latas": 0,
+      "obs": "Sente falta da versão zero açúcar"
+    },
+    {
+      "timestamp": "2026-07-30T10:26:58.160000",
+      "date": "2026-07-29",
+      "store": "barra",
+      "demonstrator": "Andressa",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 6,
+      "previsao_sache": 6,
+      "previsao_latas": 0,
+      "obs": "Bom"
+    },
+    {
+      "timestamp": "2026-07-30T16:21:55.199000",
+      "date": "2026-07-29",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 15,
+      "abordagens_estimated": false,
+      "previsao_total": 4,
+      "previsao_sache": 3,
+      "previsao_latas": 1,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-07-30T17:14:26.391000",
+      "date": "2026-07-30",
+      "store": "barra",
+      "demonstrator": "Andressa",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 12,
+      "previsao_sache": 11,
+      "previsao_latas": 1,
+      "obs": "Bom."
+    },
+    {
+      "timestamp": "2026-07-30T16:23:12.886000",
+      "date": "2026-07-30",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 21,
+      "abordagens_estimated": false,
+      "previsao_total": 11,
+      "previsao_sache": 8,
+      "previsao_latas": 3,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-07-31T16:58:51.880000",
+      "date": "2026-07-31",
+      "store": "barra",
+      "demonstrator": "Andressa",
+      "abordagens": 50,
+      "abordagens_estimated": true,
+      "previsao_total": 5,
+      "previsao_sache": 4,
+      "previsao_latas": 1,
+      "obs": "Bom"
+    },
+    {
+      "timestamp": "2026-08-04T21:16:49.677000",
+      "date": "2026-08-04",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 19,
+      "abordagens_estimated": false,
+      "previsao_total": 12,
+      "previsao_sache": 11,
+      "previsao_latas": 1,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-08-05T16:40:05.045000",
+      "date": "2026-08-05",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 25,
+      "abordagens_estimated": false,
+      "previsao_total": 15,
+      "previsao_sache": 14,
+      "previsao_latas": 1,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-08-07T16:19:35.251000",
+      "date": "2026-08-07",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 22,
+      "abordagens_estimated": false,
+      "previsao_total": 9,
+      "previsao_sache": 9,
+      "previsao_latas": 0,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-08-11T16:26:48.475000",
+      "date": "2026-08-11",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 15,
+      "abordagens_estimated": false,
+      "previsao_total": 4,
+      "previsao_sache": 0,
+      "previsao_latas": 4,
+      "obs": "O natural é mais saboroso"
+    },
+    {
+      "timestamp": "2026-08-12T18:20:44.986000",
+      "date": "2026-08-12",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 17,
+      "abordagens_estimated": false,
+      "previsao_total": 6,
+      "previsao_sache": 0,
+      "previsao_latas": 6,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-08-13T16:45:30.877000",
+      "date": "2026-08-14",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 16,
+      "abordagens_estimated": false,
+      "previsao_total": 5,
+      "previsao_sache": 0,
+      "previsao_latas": 5,
+      "obs": "Original é mais saboroso"
+    },
+    {
+      "timestamp": "2026-08-16T09:51:43.514000",
+      "date": "2026-08-15",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 17,
+      "abordagens_estimated": false,
+      "previsao_total": 4,
+      "previsao_sache": 0,
+      "previsao_latas": 4,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-08-18T16:33:18.477000",
+      "date": "2026-08-18",
+      "store": "barra",
+      "demonstrator": "Fabiola carvalho",
+      "abordagens": 38,
+      "abordagens_estimated": false,
+      "previsao_total": 8,
+      "previsao_sache": 6,
+      "previsao_latas": 2,
+      "obs": "Muito bom"
+    },
+    {
+      "timestamp": "2026-08-18T16:22:47.559000",
+      "date": "2026-08-18",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 16,
+      "abordagens_estimated": false,
+      "previsao_total": 4,
+      "previsao_sache": 0,
+      "previsao_latas": 4,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-08-19T16:05:07.173000",
+      "date": "2026-08-19",
+      "store": "barra",
+      "demonstrator": "Fabiola carvalho",
+      "abordagens": 20,
+      "abordagens_estimated": false,
+      "previsao_total": 2,
+      "previsao_sache": 1,
+      "previsao_latas": 1,
+      "obs": "Maravilhoso"
+    },
+    {
+      "timestamp": "2026-08-19T16:10:07.493000",
+      "date": "2026-08-19",
+      "store": "recreio",
+      "demonstrator": "Tamires",
+      "abordagens": 19,
+      "abordagens_estimated": false,
+      "previsao_total": 7,
+      "previsao_sache": 0,
+      "previsao_latas": 7,
+      "obs": "."
+    }
+  ]
+}
