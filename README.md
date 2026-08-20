@@ -10,6 +10,7 @@ Site estático puro — **sem servidor, sem build**. Só HTML + CSS + JS + um ar
 ├── index.html      → estrutura da página (não precisa mexer no dia a dia)
 ├── style.css        → visual (não precisa mexer no dia a dia)
 ├── app.js            → lógica dos filtros e gráficos (não precisa mexer no dia a dia)
+├── chart.min.js      → biblioteca de gráficos, hospedada aqui dentro (não depende de nenhum site externo)
 ├── data.json        → TODOS os números do painel — é aqui que você atualiza toda semana
 └── assets/
     ├── logo-suprasoy.jpg
@@ -80,3 +81,7 @@ python3 -m http.server 8000
 ```
 
 Depois abra `http://localhost:8000` no navegador.
+
+## Histórico de correções
+
+**20/08/2026** — A biblioteca de gráficos (Chart.js) estava sendo carregada de um CDN externo (cdnjs.cloudflare.com). Em algumas redes (firewall corporativo, bloqueador de anúncios) esse domínio fica bloqueado, e quando isso acontece os gráficos, o calendário de cobertura e a tabela ficam em branco — mas os textos estáticos e os números que não dependem de gráfico continuam aparecendo normalmente, o que torna o problema difícil de notar à primeira vista. A correção foi trazer o Chart.js para dentro do próprio repositório (`chart.min.js`), então o site não depende mais de nenhum site externo para funcionar. Se o painel voltar a aparecer parcialmente em branco no futuro, aperte **F12 → Console** e veja se há alguma linha vermelha — ela vai dizer exatamente o que falhou.

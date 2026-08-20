@@ -107,13 +107,16 @@
   }
 
   // ---------- render orchestration ----------
+  function safe(fn, label) {
+    try { fn(); } catch (err) { console.error("Falha ao renderizar: " + label, err); }
+  }
   function renderAll() {
-    renderKPIs();
-    renderWeeklyChart();
-    renderMixChart();
-    renderForecastChart();
-    renderCoverageCalendar();
-    renderTable();
+    safe(renderKPIs, "KPIs");
+    safe(renderWeeklyChart, "gráfico semanal");
+    safe(renderMixChart, "mix de produto");
+    safe(renderForecastChart, "previsão x real");
+    safe(renderCoverageCalendar, "calendário de cobertura");
+    safe(renderTable, "tabela detalhada");
   }
 
   // ---------- KPIs ----------
@@ -294,7 +297,15 @@
   }
 
   function renderChart(canvasId, type, config) {
-    const ctx = document.getElementById(canvasId).getContext("2d");
+    const canvas = document.getElementById(canvasId);
+    if (typeof Chart === "undefined") {
+      const p = document.createElement("p");
+      p.style.cssText = "color:#C0392B;font-size:13px;padding:20px;";
+      p.textContent = "Não foi possível carregar a biblioteca de gráficos. Recarregue a página (Ctrl+Shift+R).";
+      canvas.replaceWith(p);
+      return;
+    }
+    const ctx = canvas.getContext("2d");
     if (charts[canvasId]) charts[canvasId].destroy();
     charts[canvasId] = new Chart(ctx, { type, ...config });
   }
