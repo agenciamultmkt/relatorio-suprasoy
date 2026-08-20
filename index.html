@@ -35,10 +35,9 @@
       <h1>Ação de degustação<br><span class="hero-accent">semana a semana.</span></h1>
       <p class="hero-sub">Cada número aqui começou como um traço no papel de uma promotora, na loja, contando pote a pote. Este painel junta essa contagem de campo com o estoque real do ponto de venda — para separar o que foi <em>anunciado</em> do que foi <em>vendido de fato</em>.</p>
     </div>
-    <div class="hero-tally" aria-hidden="true">
-      <div class="tally-row"><span class="tally-mark"></span><span class="tally-mark"></span><span class="tally-mark"></span><span class="tally-mark"></span><span class="tally-mark cross"></span></div>
-      <div class="tally-row"><span class="tally-mark"></span><span class="tally-mark"></span><span class="tally-mark"></span></div>
-      <div class="tally-caption">311 dias de campanha, contados um a um</div>
+    <div class="hero-photo">
+      <img src="assets/produtos-suprasoy.png" alt="Latas SupraSoy Nature e Original">
+      <p class="hero-photo-caption">SupraSoy Original e Nature — parte da linha acompanhada neste painel, junto ao Sachê</p>
     </div>
   </section>
 
@@ -94,38 +93,24 @@
     </div>
   </section>
 
-  <section class="two-col">
-    <div class="panel">
-      <div class="panel-head">
-        <h2>Mix de produto</h2>
-        <p class="panel-sub">Participação de cada SKU no total vendido, no período filtrado.</p>
-      </div>
-      <div class="chart-box">
-        <canvas id="chartMix"></canvas>
-      </div>
+  <section class="panel">
+    <div class="panel-head">
+      <h2>Previsão × Real, por semana</h2>
+      <p class="panel-sub">A previsão soma só os dias em que o formulário foi respondido naquela semana — em semanas com cobertura parcial, o valor fica artificialmente baixo (não é sinal de subestimação real). Barras cinzas: nenhum formulário preenchido naquela semana/loja.</p>
     </div>
-    <div class="panel">
-      <div class="panel-head">
-        <h2>Previsão × Real, por semana</h2>
-        <p class="panel-sub">A previsão soma só os dias em que o formulário foi respondido naquela semana — em semanas com cobertura parcial, o valor fica artificialmente baixo (não é sinal de subestimação real). Barras cinzas: nenhum formulário preenchido naquela semana/loja.</p>
-      </div>
-      <div class="chart-box">
-        <canvas id="chartForecast"></canvas>
-      </div>
+    <div class="chart-box chart-tall">
+      <canvas id="chartForecast"></canvas>
     </div>
   </section>
 
   <section class="panel">
     <div class="panel-head">
-      <h2>Cobertura diária</h2>
-      <p class="panel-sub">Um quadrado por dia de campanha. Amarelo = sem abordagem (domingo, feriado ou pausa). Passe o mouse para o motivo.</p>
+      <h2>Mix de produto</h2>
+      <p class="panel-sub">Participação de cada SKU no total vendido, no período filtrado.</p>
     </div>
-    <div class="legend-row">
-      <span class="legend-item"><span class="legend-swatch swatch-ok"></span>Com abordagem</span>
-      <span class="legend-item"><span class="legend-swatch swatch-off"></span>Sem abordagem</span>
-      <span class="legend-item"><span class="legend-swatch swatch-pause"></span>Campanha pausada</span>
+    <div class="chart-box chart-box-centered">
+      <canvas id="chartMix"></canvas>
     </div>
-    <div id="coverageCalendar" class="coverage-calendar"></div>
   </section>
 
   <section class="panel">

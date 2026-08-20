@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const SKU_COLORS = { original: "#1E3A8A", nature: "#5B8DEF", sache: "#F5C518" };
+  const SKU_COLORS = { original: "#2C3B66", nature: "#F2621B", sache: "#F5C518" };
   const SKU_LABELS = { original: "Original", nature: "Nature", sache: "Sachê" };
   const STORE_LABELS = { barra: "Guanabara Barra", recreio: "Guanabara Recreio" };
 
@@ -115,7 +115,6 @@
     safe(renderWeeklyChart, "gráfico semanal");
     safe(renderMixChart, "mix de produto");
     safe(renderForecastChart, "previsão x real");
-    safe(renderCoverageCalendar, "calendário de cobertura");
     safe(renderTable, "tabela detalhada");
   }
 
@@ -205,12 +204,12 @@
     let datasets;
     if (state.store === "all") {
       datasets = [
-        { label: "Guanabara Barra", data: weeks.map((w) => w.barra.total), backgroundColor: "#5B8DEF", borderRadius: 6 },
-        { label: "Guanabara Recreio", data: weeks.map((w) => w.recreio.total), backgroundColor: "#1E3A8A", borderRadius: 6 },
+        { label: "Guanabara Barra", data: weeks.map((w) => w.barra.total), backgroundColor: "#3F5590", borderRadius: 6 },
+        { label: "Guanabara Recreio", data: weeks.map((w) => w.recreio.total), backgroundColor: "#F2621B", borderRadius: 6 },
       ];
     } else {
       datasets = [
-        { label: STORE_LABELS[state.store], data: weeks.map((w) => w[state.store].total), backgroundColor: "#2F5CC4", borderRadius: 6 },
+        { label: STORE_LABELS[state.store], data: weeks.map((w) => w[state.store].total), backgroundColor: "#3F5590", borderRadius: 6 },
       ];
     }
 
@@ -265,8 +264,8 @@
       data: {
         labels,
         datasets: [
-          { label: "Previsão (promotoras)", data: forecastData, backgroundColor: forecastData.map((v, i) => hasForm[i] ? "#F5C518" : "#EFEFEF"), borderRadius: 6 },
-          { label: "Vendas reais", data: realData, backgroundColor: "#1E3A8A", borderRadius: 6 },
+          { label: "Previsão (promotoras)", data: forecastData, backgroundColor: forecastData.map((v, i) => hasForm[i] ? "#F2621B" : "#EFEFEF"), borderRadius: 6 },
+          { label: "Vendas reais", data: realData, backgroundColor: "#2C3B66", borderRadius: 6 },
         ],
       },
       options: baseBarOptions("Unidades"),
@@ -288,7 +287,7 @@
   }
   function tooltipStyle() {
     return {
-      backgroundColor: "#1E3A8A",
+      backgroundColor: "#2C3B66",
       titleFont: { family: "Source Sans 3", weight: "700" },
       bodyFont: { family: "IBM Plex Mono" },
       padding: 10,
@@ -308,81 +307,6 @@
     const ctx = canvas.getContext("2d");
     if (charts[canvasId]) charts[canvasId].destroy();
     charts[canvasId] = new Chart(ctx, { type, ...config });
-  }
-
-  // ---------- Coverage calendar ----------
-  function buildCoverageMap(store) {
-    const map = {};
-    DATA.daily_coverage.filter((r) => r.store === store).forEach((r) => {
-      map[r.date] = { status: r.status === "inicio" ? "ok" : r.status, motivo: r.motivo, vendas: r.vendas, obs: r.obs };
-    });
-    // fill from form where stock-tracking has no record
-    DATA.daily_form.filter((r) => r.store === store).forEach((r) => {
-      if (!map[r.date]) map[r.date] = { status: "ok", fromForm: true };
-    });
-    return map;
-  }
-
-  function renderCoverageCalendar() {
-    const container = document.getElementById("coverageCalendar");
-    container.innerHTML = "";
-    const stores = storesForFilter();
-
-    // full date range
-    const allDates = [];
-    let d = new Date("2026-07-08T12:00:00");
-    const last = new Date("2026-08-19T12:00:00");
-    while (d <= last) {
-      allDates.push(d.toISOString().slice(0, 10));
-      d.setDate(d.getDate() + 1);
-    }
-
-    stores.forEach((store) => {
-      const covMap = buildCoverageMap(store);
-      const pause = DATA.meta.barra_pause;
-
-      const block = document.createElement("div");
-      block.className = "coverage-store";
-      const title = document.createElement("div");
-      title.className = "coverage-store-title";
-      title.textContent = STORE_LABELS[store];
-      block.appendChild(title);
-
-      const grid = document.createElement("div");
-      grid.className = "coverage-grid";
-      grid.style.gridTemplateColumns = "repeat(7, 26px)";
-
-      // leading padding to align to week start (Sun=0)
-      const firstDow = new Date(allDates[0] + "T12:00:00").getDay();
-      for (let i = 0; i < firstDow; i++) {
-        const pad = document.createElement("div");
-        pad.className = "cov-cell empty";
-        grid.appendChild(pad);
-      }
-
-      allDates.forEach((dateISO) => {
-        const cell = document.createElement("div");
-        cell.className = "cov-cell";
-        const isPaused = store === "barra" && pause && isDateInRange(dateISO, pause.start, pause.end);
-        const rec = covMap[dateISO];
-
-        if (isPaused) {
-          cell.classList.add("pause");
-          cell.title = `${formatDateShort(dateISO)} — campanha pausada na Barra`;
-        } else if (rec && rec.status === "sem_abordagem") {
-          cell.classList.add("off");
-          cell.title = `${formatDateShort(dateISO)} — sem abordagem${rec.motivo ? " (" + rec.motivo + ")" : ""}`;
-        } else if (rec && rec.status === "ok") {
-          cell.title = `${formatDateShort(dateISO)} — com abordagem${rec.vendas !== undefined && rec.vendas !== null ? " · " + rec.vendas + " un. vendidas" : ""}`;
-        } else {
-          cell.classList.add("empty");
-        }
-        grid.appendChild(cell);
-      });
-
-      block.appendChild(grid);
-      container.appendChild(block);
-    });
   }
 
   // ---------- Weekly table ----------

@@ -1,16 +1,18 @@
 :root {
-  --navy: #1E3A8A;
-  --navy-deep: #142a63;
-  --blue: #2F5CC4;
-  --lblue: #5B8DEF;
+  --navy: #2C3B66;
+  --navy-deep: #1F2A4D;
+  --blue: #3F5590;
+  --lblue: #7B93C7;
+  --orange: #F2621B;
+  --orange-soft: #FDE9DD;
   --yellow: #F5C518;
   --yellow-soft: #FFF3C4;
-  --lilac: #E4EAFA;
-  --bg: #F6F7FB;
+  --lilac: #E7ECF6;
+  --bg: #F7F7FA;
   --paper: #FFFFFF;
   --ink: #1B2333;
   --ink-soft: #5B6478;
-  --line: #E1E5F0;
+  --line: #E4E2F0;
   --green: #1E7B34;
   --red: #C0392B;
 
@@ -37,8 +39,8 @@ body {
   inset: 0;
   z-index: -1;
   background-image:
-    radial-gradient(circle at 15% 8%, rgba(91,141,239,0.08), transparent 40%),
-    radial-gradient(circle at 85% 92%, rgba(245,197,24,0.10), transparent 45%);
+    radial-gradient(circle at 15% 8%, rgba(63,85,144,0.08), transparent 40%),
+    radial-gradient(circle at 85% 92%, rgba(242,98,27,0.10), transparent 45%);
   pointer-events: none;
 }
 
@@ -106,30 +108,26 @@ a { color: inherit; }
 }
 .hero-sub em { color: var(--ink); font-style: normal; font-weight: 600; }
 
-.hero-tally {
+.hero-photo {
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 18px;
-  padding: 28px 26px;
+  padding: 14px;
   box-shadow: 0 20px 40px -28px rgba(20, 42, 99, 0.35);
 }
-.tally-row { display: flex; gap: 8px; margin-bottom: 14px; position: relative; }
-.tally-mark { width: 3px; height: 34px; background: var(--navy); border-radius: 2px; position: relative; }
-.tally-mark.cross::after {
-  content: '';
-  position: absolute;
-  left: -22px; top: 15px;
-  width: 44px; height: 3px;
-  background: var(--yellow);
-  transform: rotate(-32deg);
-  border-radius: 2px;
+.hero-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
 }
-.tally-caption {
+.hero-photo-caption {
   font-family: var(--font-mono);
   font-size: 11.5px;
   color: var(--ink-soft);
-  margin-top: 4px;
+  margin-top: 12px;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /* ---------- Controls ---------- */
@@ -194,7 +192,7 @@ a { color: inherit; }
 }
 #kpiVendas::before { background: var(--navy); }
 #kpiAbordagens::before { background: var(--blue); }
-#kpiPrevisao::before { background: var(--lblue); }
+#kpiPrevisao::before { background: var(--orange); }
 #kpiGap::before { background: var(--yellow); }
 .kpi-label {
   font-size: 12.5px;
@@ -241,43 +239,7 @@ a { color: inherit; }
 
 .chart-box { position: relative; height: 300px; }
 .chart-tall { height: 340px; }
-
-/* ---------- Coverage calendar ---------- */
-.legend-row { display: flex; gap: 20px; margin-bottom: 16px; flex-wrap: wrap; }
-.legend-item { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--ink-soft); }
-.legend-swatch { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
-.swatch-ok { background: var(--lilac); border: 1px solid var(--blue); }
-.swatch-off { background: var(--yellow); }
-.swatch-pause { background: repeating-linear-gradient(135deg, #e2e2e2, #e2e2e2 4px, #f3f3f3 4px, #f3f3f3 8px); }
-
-.coverage-store { margin-bottom: 22px; }
-.coverage-store:last-child { margin-bottom: 0; }
-.coverage-store-title {
-  font-weight: 600;
-  font-size: 14px;
-  color: var(--navy);
-  margin-bottom: 10px;
-}
-.coverage-grid {
-  display: grid;
-  grid-template-columns: repeat(31, minmax(0, 1fr));
-  gap: 4px;
-}
-.cov-cell {
-  aspect-ratio: 1;
-  border-radius: 4px;
-  background: var(--lilac);
-  border: 1px solid rgba(47,92,196,0.18);
-  cursor: default;
-  position: relative;
-}
-.cov-cell.off { background: var(--yellow); border-color: #e0b30f; }
-.cov-cell.pause {
-  background: repeating-linear-gradient(135deg, #ececec, #ececec 4px, #f7f7f7 4px, #f7f7f7 8px);
-  border-color: #d8d8d8;
-}
-.cov-cell.empty { background: transparent; border: none; }
-.cov-cell[title]:hover { outline: 2px solid var(--navy); outline-offset: 1px; z-index: 2; }
+.chart-box-centered { max-width: 420px; margin: 0 auto; }
 
 /* ---------- Table ---------- */
 .table-wrap { overflow-x: auto; }
@@ -337,7 +299,6 @@ tbody tr.total-row { font-weight: 700; background: var(--lilac); }
   .hero { grid-template-columns: 1fr; }
   .kpis { grid-template-columns: repeat(2, 1fr); }
   .two-col { grid-template-columns: 1fr; }
-  .coverage-grid { grid-template-columns: repeat(15, minmax(0,1fr)); }
 }
 @media (max-width: 560px) {
   .kpis { grid-template-columns: 1fr; }
