@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-08-20",
+    "generated": "2026-08-26",
     "stores": [
       "barra",
       "recreio"
@@ -18,7 +18,10 @@
       "Vendas reais calculadas a partir de contagem de estoque (inicial - final) informada pelo cliente via WhatsApp.",
       "Abordagens e previsão de vendas vêm do formulário preenchido pelas promotoras em campo — a previsão NÃO considera desistências no checkout.",
       "Valores de abordagem marcados como estimados (~50) referem-se a respostas textuais (\"Bastante\") do formulário, convertidas em estimativa aproximada a pedido do cliente.",
-      "A Guanabara Barra ficou sem ação promocional ativa entre 01/08 e 17/08/2026 (retomada em 18/08); vendas reais nesse período vieram de giro de prateleira, sem degustação ativa."
+      "A Guanabara Barra ficou sem ação promocional ativa entre 01/08 e 17/08/2026 (retomada em 18/08); vendas reais nesse período vieram de giro de prateleira, sem degustação ativa.",
+      "SupraSoy Sachê no Guanabara Recreio segue sem estoque desde 12/08/2026 — mais de duas semanas de ruptura contínua nesse SKU.",
+      "SupraSoy Original no Guanabara Recreio foi reabastecido em 20/08/2026 (+28 unidades), encerrando a ruptura que durava desde 12/08.",
+      "\"Degustações servidas\" é uma métrica nova do formulário, preenchida pelas promotoras a partir de 20/08/2026 — períodos anteriores não têm esse dado."
     ]
   },
   "weeks_real": [
@@ -110,6 +113,24 @@
         "nature": 19,
         "sache": 6,
         "total": 30
+      }
+    },
+    {
+      "id": "W6",
+      "start": "2026-08-18",
+      "end": "2026-08-24",
+      "label": "18 a 24/08",
+      "barra": {
+        "original": 10,
+        "nature": 8,
+        "sache": 9,
+        "total": 27
+      },
+      "recreio": {
+        "original": 20,
+        "nature": 15,
+        "sache": 0,
+        "total": 35
       }
     }
   ],
@@ -365,6 +386,91 @@
       "status": "ok",
       "vendas": 6,
       "obs": "acumula 16+17/08"
+    },
+    {
+      "date": "2026-08-18",
+      "store": "barra",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-08-19",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 6
+    },
+    {
+      "date": "2026-08-20",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 5
+    },
+    {
+      "date": "2026-08-21",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 2
+    },
+    {
+      "date": "2026-08-22",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 0
+    },
+    {
+      "date": "2026-08-23",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-24",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 14,
+      "obs": "acumula 23+24/08"
+    },
+    {
+      "date": "2026-08-18",
+      "store": "recreio",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-08-19",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 1
+    },
+    {
+      "date": "2026-08-20",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 6,
+      "obs": "Original restockado (+28un); reposição não contada como venda"
+    },
+    {
+      "date": "2026-08-21",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 9
+    },
+    {
+      "date": "2026-08-22",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 3
+    },
+    {
+      "date": "2026-08-23",
+      "store": "recreio",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-24",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 16,
+      "obs": "acumula 23+24/08"
     }
   ],
   "daily_form": [
@@ -375,9 +481,11 @@
       "demonstrator": "Tamires",
       "abordagens": 22,
       "abordagens_estimated": false,
-      "previsao_total": 6,
+      "degustacoes": null,
+      "previsao_total": 12,
+      "previsao_original": 6,
+      "previsao_nature": 3,
       "previsao_sache": 3,
-      "previsao_latas": 3,
       "obs": "O suprasoy original é mais saboroso"
     },
     {
@@ -387,9 +495,11 @@
       "demonstrator": "Andressa Cardoso",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 6,
-      "previsao_sache": 5,
-      "previsao_latas": 1,
+      "degustacoes": null,
+      "previsao_total": 12,
+      "previsao_original": 6,
+      "previsao_nature": 5,
+      "previsao_sache": 1,
       "obs": "Bom."
     },
     {
@@ -399,9 +509,11 @@
       "demonstrator": "Tamires",
       "abordagens": 17,
       "abordagens_estimated": false,
-      "previsao_total": 9,
-      "previsao_sache": 5,
-      "previsao_latas": 4,
+      "degustacoes": null,
+      "previsao_total": 18,
+      "previsao_original": 9,
+      "previsao_nature": 5,
+      "previsao_sache": 4,
       "obs": "Sentem falta da opção zero açúcar"
     },
     {
@@ -411,9 +523,11 @@
       "demonstrator": "Andressa Cardoso",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 14,
-      "previsao_sache": 11,
-      "previsao_latas": 2,
+      "degustacoes": null,
+      "previsao_total": 27,
+      "previsao_original": 14,
+      "previsao_nature": 11,
+      "previsao_sache": 2,
       "obs": "Bom."
     },
     {
@@ -423,9 +537,11 @@
       "demonstrator": "Andressa",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 7,
-      "previsao_sache": 5,
-      "previsao_latas": 2,
+      "degustacoes": null,
+      "previsao_total": 14,
+      "previsao_original": 7,
+      "previsao_nature": 5,
+      "previsao_sache": 2,
       "obs": "Bom"
     },
     {
@@ -435,9 +551,11 @@
       "demonstrator": "Tamires Oliveira",
       "abordagens": 19,
       "abordagens_estimated": false,
-      "previsao_total": 11,
-      "previsao_sache": 9,
-      "previsao_latas": 2,
+      "degustacoes": null,
+      "previsao_total": 22,
+      "previsao_original": 11,
+      "previsao_nature": 9,
+      "previsao_sache": 2,
       "obs": "."
     },
     {
@@ -447,9 +565,11 @@
       "demonstrator": "Andressa",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 3,
-      "previsao_sache": 3,
-      "previsao_latas": 0,
+      "degustacoes": null,
+      "previsao_total": 6,
+      "previsao_original": 3,
+      "previsao_nature": 3,
+      "previsao_sache": 0,
       "obs": "Bom"
     },
     {
@@ -459,9 +579,11 @@
       "demonstrator": "Tamires",
       "abordagens": 13,
       "abordagens_estimated": false,
-      "previsao_total": 5,
-      "previsao_sache": 5,
-      "previsao_latas": 0,
+      "degustacoes": null,
+      "previsao_total": 10,
+      "previsao_original": 5,
+      "previsao_nature": 5,
+      "previsao_sache": 0,
       "obs": "N encontra o produto em Niterói"
     },
     {
@@ -471,9 +593,11 @@
       "demonstrator": "Andressa",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 4,
-      "previsao_sache": 4,
-      "previsao_latas": 0,
+      "degustacoes": null,
+      "previsao_total": 8,
+      "previsao_original": 4,
+      "previsao_nature": 4,
+      "previsao_sache": 0,
       "obs": "Bom"
     },
     {
@@ -483,9 +607,11 @@
       "demonstrator": "Tamires",
       "abordagens": 16,
       "abordagens_estimated": false,
-      "previsao_total": 8,
-      "previsao_sache": 6,
-      "previsao_latas": 2,
+      "degustacoes": null,
+      "previsao_total": 16,
+      "previsao_original": 8,
+      "previsao_nature": 6,
+      "previsao_sache": 2,
       "obs": "."
     },
     {
@@ -495,9 +621,11 @@
       "demonstrator": "Andressa",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 3,
-      "previsao_sache": 3,
-      "previsao_latas": 0,
+      "degustacoes": null,
+      "previsao_total": 6,
+      "previsao_original": 3,
+      "previsao_nature": 3,
+      "previsao_sache": 0,
       "obs": "Bom"
     },
     {
@@ -507,9 +635,11 @@
       "demonstrator": "Tamires Oliveira",
       "abordagens": 11,
       "abordagens_estimated": false,
-      "previsao_total": 6,
-      "previsao_sache": 4,
-      "previsao_latas": 2,
+      "degustacoes": null,
+      "previsao_total": 12,
+      "previsao_original": 6,
+      "previsao_nature": 4,
+      "previsao_sache": 2,
       "obs": "Degustação saborosa"
     },
     {
@@ -519,9 +649,11 @@
       "demonstrator": "Andressa Cardoso",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 5,
-      "previsao_sache": 3,
-      "previsao_latas": 2,
+      "degustacoes": null,
+      "previsao_total": 10,
+      "previsao_original": 5,
+      "previsao_nature": 3,
+      "previsao_sache": 2,
       "obs": "Bom"
     },
     {
@@ -531,9 +663,11 @@
       "demonstrator": "Tamires",
       "abordagens": 13,
       "abordagens_estimated": false,
-      "previsao_total": 5,
-      "previsao_sache": 5,
-      "previsao_latas": 0,
+      "degustacoes": null,
+      "previsao_total": 10,
+      "previsao_original": 5,
+      "previsao_nature": 5,
+      "previsao_sache": 0,
       "obs": "."
     },
     {
@@ -543,9 +677,11 @@
       "demonstrator": "Andressa Cardoso",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 6,
-      "previsao_sache": 6,
-      "previsao_latas": 0,
+      "degustacoes": null,
+      "previsao_total": 12,
+      "previsao_original": 6,
+      "previsao_nature": 6,
+      "previsao_sache": 0,
       "obs": "Bom"
     },
     {
@@ -555,9 +691,11 @@
       "demonstrator": "Tamires",
       "abordagens": 16,
       "abordagens_estimated": false,
-      "previsao_total": 7,
-      "previsao_sache": 7,
-      "previsao_latas": 0,
+      "degustacoes": null,
+      "previsao_total": 14,
+      "previsao_original": 7,
+      "previsao_nature": 7,
+      "previsao_sache": 0,
       "obs": "."
     },
     {
@@ -567,9 +705,11 @@
       "demonstrator": "Andressa",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 6,
-      "previsao_sache": 5,
-      "previsao_latas": 1,
+      "degustacoes": null,
+      "previsao_total": 12,
+      "previsao_original": 6,
+      "previsao_nature": 5,
+      "previsao_sache": 1,
       "obs": "Bom"
     },
     {
@@ -579,9 +719,11 @@
       "demonstrator": "Tamires de Oliveira",
       "abordagens": 9,
       "abordagens_estimated": false,
-      "previsao_total": 5,
-      "previsao_sache": 3,
-      "previsao_latas": 2,
+      "degustacoes": null,
+      "previsao_total": 10,
+      "previsao_original": 5,
+      "previsao_nature": 3,
+      "previsao_sache": 2,
       "obs": "."
     },
     {
@@ -591,9 +733,11 @@
       "demonstrator": "Tamires",
       "abordagens": 14,
       "abordagens_estimated": false,
-      "previsao_total": 6,
-      "previsao_sache": 5,
-      "previsao_latas": 1,
+      "degustacoes": null,
+      "previsao_total": 12,
+      "previsao_original": 6,
+      "previsao_nature": 5,
+      "previsao_sache": 1,
       "obs": "."
     },
     {
@@ -603,9 +747,11 @@
       "demonstrator": "Andressa",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 6,
-      "previsao_sache": 5,
-      "previsao_latas": 1,
+      "degustacoes": null,
+      "previsao_total": 12,
+      "previsao_original": 6,
+      "previsao_nature": 5,
+      "previsao_sache": 1,
       "obs": "Bom."
     },
     {
@@ -615,9 +761,11 @@
       "demonstrator": "Tamires",
       "abordagens": 15,
       "abordagens_estimated": false,
-      "previsao_total": 5,
-      "previsao_sache": 4,
-      "previsao_latas": 1,
+      "degustacoes": null,
+      "previsao_total": 10,
+      "previsao_original": 5,
+      "previsao_nature": 4,
+      "previsao_sache": 1,
       "obs": "."
     },
     {
@@ -627,9 +775,11 @@
       "demonstrator": "Andressa",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 3,
-      "previsao_sache": 2,
-      "previsao_latas": 1,
+      "degustacoes": null,
+      "previsao_total": 6,
+      "previsao_original": 3,
+      "previsao_nature": 2,
+      "previsao_sache": 1,
       "obs": "Bom"
     },
     {
@@ -639,9 +789,11 @@
       "demonstrator": "Tamires",
       "abordagens": 9,
       "abordagens_estimated": false,
-      "previsao_total": 4,
-      "previsao_sache": 4,
-      "previsao_latas": 0,
+      "degustacoes": null,
+      "previsao_total": 8,
+      "previsao_original": 4,
+      "previsao_nature": 4,
+      "previsao_sache": 0,
       "obs": "."
     },
     {
@@ -651,9 +803,11 @@
       "demonstrator": "Tamires",
       "abordagens": 17,
       "abordagens_estimated": false,
-      "previsao_total": 6,
-      "previsao_sache": 5,
-      "previsao_latas": 1,
+      "degustacoes": null,
+      "previsao_total": 12,
+      "previsao_original": 6,
+      "previsao_nature": 5,
+      "previsao_sache": 1,
       "obs": "."
     },
     {
@@ -663,9 +817,11 @@
       "demonstrator": "Andressa Cardoso",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 8,
-      "previsao_sache": 8,
-      "previsao_latas": 0,
+      "degustacoes": null,
+      "previsao_total": 16,
+      "previsao_original": 8,
+      "previsao_nature": 8,
+      "previsao_sache": 0,
       "obs": "Bom, original sendo melhor."
     },
     {
@@ -675,9 +831,11 @@
       "demonstrator": "Tamires",
       "abordagens": 13,
       "abordagens_estimated": false,
-      "previsao_total": 3,
-      "previsao_sache": 3,
-      "previsao_latas": 0,
+      "degustacoes": null,
+      "previsao_total": 6,
+      "previsao_original": 3,
+      "previsao_nature": 3,
+      "previsao_sache": 0,
       "obs": "Sente falta da versão zero açúcar"
     },
     {
@@ -687,9 +845,11 @@
       "demonstrator": "Andressa",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 6,
-      "previsao_sache": 6,
-      "previsao_latas": 0,
+      "degustacoes": null,
+      "previsao_total": 12,
+      "previsao_original": 6,
+      "previsao_nature": 6,
+      "previsao_sache": 0,
       "obs": "Bom"
     },
     {
@@ -699,9 +859,11 @@
       "demonstrator": "Tamires",
       "abordagens": 15,
       "abordagens_estimated": false,
-      "previsao_total": 4,
-      "previsao_sache": 3,
-      "previsao_latas": 1,
+      "degustacoes": null,
+      "previsao_total": 8,
+      "previsao_original": 4,
+      "previsao_nature": 3,
+      "previsao_sache": 1,
       "obs": "."
     },
     {
@@ -711,9 +873,11 @@
       "demonstrator": "Andressa",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 12,
-      "previsao_sache": 11,
-      "previsao_latas": 1,
+      "degustacoes": null,
+      "previsao_total": 24,
+      "previsao_original": 12,
+      "previsao_nature": 11,
+      "previsao_sache": 1,
       "obs": "Bom."
     },
     {
@@ -723,9 +887,11 @@
       "demonstrator": "Tamires",
       "abordagens": 21,
       "abordagens_estimated": false,
-      "previsao_total": 11,
-      "previsao_sache": 8,
-      "previsao_latas": 3,
+      "degustacoes": null,
+      "previsao_total": 22,
+      "previsao_original": 11,
+      "previsao_nature": 8,
+      "previsao_sache": 3,
       "obs": "."
     },
     {
@@ -735,9 +901,11 @@
       "demonstrator": "Andressa",
       "abordagens": 50,
       "abordagens_estimated": true,
-      "previsao_total": 5,
-      "previsao_sache": 4,
-      "previsao_latas": 1,
+      "degustacoes": null,
+      "previsao_total": 10,
+      "previsao_original": 5,
+      "previsao_nature": 4,
+      "previsao_sache": 1,
       "obs": "Bom"
     },
     {
@@ -747,9 +915,11 @@
       "demonstrator": "Tamires",
       "abordagens": 19,
       "abordagens_estimated": false,
-      "previsao_total": 12,
-      "previsao_sache": 11,
-      "previsao_latas": 1,
+      "degustacoes": null,
+      "previsao_total": 24,
+      "previsao_original": 12,
+      "previsao_nature": 11,
+      "previsao_sache": 1,
       "obs": "."
     },
     {
@@ -759,9 +929,11 @@
       "demonstrator": "Tamires",
       "abordagens": 25,
       "abordagens_estimated": false,
-      "previsao_total": 15,
-      "previsao_sache": 14,
-      "previsao_latas": 1,
+      "degustacoes": null,
+      "previsao_total": 30,
+      "previsao_original": 15,
+      "previsao_nature": 14,
+      "previsao_sache": 1,
       "obs": "."
     },
     {
@@ -771,9 +943,11 @@
       "demonstrator": "Tamires",
       "abordagens": 22,
       "abordagens_estimated": false,
-      "previsao_total": 9,
-      "previsao_sache": 9,
-      "previsao_latas": 0,
+      "degustacoes": null,
+      "previsao_total": 18,
+      "previsao_original": 9,
+      "previsao_nature": 9,
+      "previsao_sache": 0,
       "obs": "."
     },
     {
@@ -783,9 +957,11 @@
       "demonstrator": "Tamires",
       "abordagens": 15,
       "abordagens_estimated": false,
-      "previsao_total": 4,
-      "previsao_sache": 0,
-      "previsao_latas": 4,
+      "degustacoes": null,
+      "previsao_total": 8,
+      "previsao_original": 4,
+      "previsao_nature": 0,
+      "previsao_sache": 4,
       "obs": "O natural é mais saboroso"
     },
     {
@@ -795,9 +971,11 @@
       "demonstrator": "Tamires",
       "abordagens": 17,
       "abordagens_estimated": false,
-      "previsao_total": 6,
-      "previsao_sache": 0,
-      "previsao_latas": 6,
+      "degustacoes": null,
+      "previsao_total": 12,
+      "previsao_original": 6,
+      "previsao_nature": 0,
+      "previsao_sache": 6,
       "obs": "."
     },
     {
@@ -807,9 +985,11 @@
       "demonstrator": "Tamires",
       "abordagens": 16,
       "abordagens_estimated": false,
-      "previsao_total": 5,
-      "previsao_sache": 0,
-      "previsao_latas": 5,
+      "degustacoes": null,
+      "previsao_total": 10,
+      "previsao_original": 5,
+      "previsao_nature": 0,
+      "previsao_sache": 5,
       "obs": "Original é mais saboroso"
     },
     {
@@ -819,9 +999,11 @@
       "demonstrator": "Tamires",
       "abordagens": 17,
       "abordagens_estimated": false,
-      "previsao_total": 4,
-      "previsao_sache": 0,
-      "previsao_latas": 4,
+      "degustacoes": null,
+      "previsao_total": 8,
+      "previsao_original": 4,
+      "previsao_nature": 0,
+      "previsao_sache": 4,
       "obs": "."
     },
     {
@@ -831,9 +1013,11 @@
       "demonstrator": "Fabiola carvalho",
       "abordagens": 38,
       "abordagens_estimated": false,
-      "previsao_total": 8,
-      "previsao_sache": 6,
-      "previsao_latas": 2,
+      "degustacoes": null,
+      "previsao_total": 16,
+      "previsao_original": 8,
+      "previsao_nature": 6,
+      "previsao_sache": 2,
       "obs": "Muito bom"
     },
     {
@@ -843,9 +1027,11 @@
       "demonstrator": "Tamires",
       "abordagens": 16,
       "abordagens_estimated": false,
-      "previsao_total": 4,
-      "previsao_sache": 0,
-      "previsao_latas": 4,
+      "degustacoes": null,
+      "previsao_total": 8,
+      "previsao_original": 4,
+      "previsao_nature": 0,
+      "previsao_sache": 4,
       "obs": "."
     },
     {
@@ -855,9 +1041,11 @@
       "demonstrator": "Fabiola carvalho",
       "abordagens": 20,
       "abordagens_estimated": false,
-      "previsao_total": 2,
+      "degustacoes": null,
+      "previsao_total": 4,
+      "previsao_original": 2,
+      "previsao_nature": 1,
       "previsao_sache": 1,
-      "previsao_latas": 1,
       "obs": "Maravilhoso"
     },
     {
@@ -867,10 +1055,110 @@
       "demonstrator": "Tamires",
       "abordagens": 19,
       "abordagens_estimated": false,
-      "previsao_total": 7,
-      "previsao_sache": 0,
-      "previsao_latas": 7,
+      "degustacoes": null,
+      "previsao_total": 14,
+      "previsao_original": 7,
+      "previsao_nature": 0,
+      "previsao_sache": 7,
       "obs": "."
+    },
+    {
+      "timestamp": "2026-08-20T16:44:26.334000",
+      "date": "2026-08-20",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 63,
+      "abordagens_estimated": false,
+      "degustacoes": 61,
+      "previsao_total": 7,
+      "previsao_original": 1,
+      "previsao_nature": 3,
+      "previsao_sache": 3,
+      "obs": "Muito saboroso"
+    },
+    {
+      "timestamp": "2026-08-20T18:23:50.399000",
+      "date": "2026-08-20",
+      "store": "recreio",
+      "demonstrator": "TAMIRES",
+      "abordagens": 39,
+      "abordagens_estimated": false,
+      "degustacoes": 17,
+      "previsao_total": 5,
+      "previsao_original": 4,
+      "previsao_nature": 1,
+      "previsao_sache": 0,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-08-21T16:28:07.637000",
+      "date": "2026-08-21",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 72,
+      "abordagens_estimated": false,
+      "degustacoes": 72,
+      "previsao_total": 5,
+      "previsao_original": 0,
+      "previsao_nature": 0,
+      "previsao_sache": 5,
+      "obs": "Delicioso de degustar"
+    },
+    {
+      "timestamp": "2026-08-21T16:46:49.082000",
+      "date": "2026-08-21",
+      "store": "recreio",
+      "demonstrator": "TAMIRES",
+      "abordagens": 62,
+      "abordagens_estimated": false,
+      "degustacoes": 33,
+      "previsao_total": 5,
+      "previsao_original": 5,
+      "previsao_nature": 0,
+      "previsao_sache": 0,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-08-22T16:17:47.807000",
+      "date": "2026-08-22",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 84,
+      "abordagens_estimated": false,
+      "degustacoes": 83,
+      "previsao_total": 8,
+      "previsao_original": 0,
+      "previsao_nature": 1,
+      "previsao_sache": 7,
+      "obs": "Muito bom!!"
+    },
+    {
+      "timestamp": "2026-08-22T16:09:42.782000",
+      "date": "2026-08-22",
+      "store": "recreio",
+      "demonstrator": "TAMIRES",
+      "abordagens": 92,
+      "abordagens_estimated": false,
+      "degustacoes": 56,
+      "previsao_total": 15,
+      "previsao_original": 11,
+      "previsao_nature": 4,
+      "previsao_sache": 0,
+      "obs": "."
+    },
+    {
+      "timestamp": "2026-08-25T16:11:52.154000",
+      "date": "2026-08-25",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 50,
+      "abordagens_estimated": false,
+      "degustacoes": 50,
+      "previsao_total": 6,
+      "previsao_original": 0,
+      "previsao_nature": 0,
+      "previsao_sache": 6,
+      "obs": "Muito nutriente"
     }
   ]
 }

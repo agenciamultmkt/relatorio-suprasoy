@@ -182,7 +182,7 @@ a { color: inherit; }
   margin: 0 auto;
   padding: 0 28px 8px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
 }
 .kpi-card {
@@ -207,6 +207,7 @@ a { color: inherit; }
 #kpiAbordagens::before { background: var(--blue); }
 #kpiPrevisao::before { background: var(--orange); }
 #kpiGap::before { background: var(--yellow); }
+#kpiDegustacoes::before { background: var(--lblue); }
 .kpi-label {
   font-size: 12.5px;
   font-weight: 600;

@@ -19,6 +19,10 @@
     {
       "id": "w5",
       "label": "11 a 17/08"
+    },
+    {
+      "id": "w6",
+      "label": "18 a 24/08"
     }
   ],
   "photos": [
@@ -303,6 +307,78 @@
       "weekLabel": "11 a 17/08",
       "file": "w5_05.jpg",
       "caption": "Degustação em família"
+    },
+    {
+      "week": "w6",
+      "weekLabel": "18 a 24/08",
+      "file": "w6_01.jpg",
+      "caption": "Consumidora experimentando o produto"
+    },
+    {
+      "week": "w6",
+      "weekLabel": "18 a 24/08",
+      "file": "w6_02.jpg",
+      "caption": "Cliente posando com o copinho de degustação"
+    },
+    {
+      "week": "w6",
+      "weekLabel": "18 a 24/08",
+      "file": "w6_03.jpg",
+      "caption": "Estrutura da ação na Praça do Pão"
+    },
+    {
+      "week": "w6",
+      "weekLabel": "18 a 24/08",
+      "file": "w6_04.jpg",
+      "caption": "Cliente com o produto em pó"
+    },
+    {
+      "week": "w6",
+      "weekLabel": "18 a 24/08",
+      "file": "w6_05.jpg",
+      "caption": "Criança degustando no carrinho"
+    },
+    {
+      "week": "w6",
+      "weekLabel": "18 a 24/08",
+      "file": "w6_06.jpg",
+      "caption": "Consumidor conferindo o produto na prateleira"
+    },
+    {
+      "week": "w6",
+      "weekLabel": "18 a 24/08",
+      "file": "w6_07.jpg",
+      "caption": "Selfie com cliente satisfeito"
+    },
+    {
+      "week": "w6",
+      "weekLabel": "18 a 24/08",
+      "file": "w6_08.jpg",
+      "caption": "Família participando da degustação"
+    },
+    {
+      "week": "w6",
+      "weekLabel": "18 a 24/08",
+      "file": "w6_09.jpg",
+      "caption": "Cliente experimentando a versão Nature"
+    },
+    {
+      "week": "w6",
+      "weekLabel": "18 a 24/08",
+      "file": "w6_10.jpg",
+      "caption": "Atendimento no ponto de venda"
+    },
+    {
+      "week": "w6",
+      "weekLabel": "18 a 24/08",
+      "file": "w6_11.jpg",
+      "caption": "Consumidora com as latas do produto"
+    },
+    {
+      "week": "w6",
+      "weekLabel": "18 a 24/08",
+      "file": "w6_12.jpg",
+      "caption": "Degustação em grupo na loja"
     }
   ]
 }

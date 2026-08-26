@@ -176,6 +176,22 @@
     gapCard.querySelector(".kpi-sub").textContent = matchedDays > 0
       ? `comparação dia a dia, só nos ${matchedDays} dias com previsão e venda real registradas`
       : "sem dias com previsão e venda real cruzáveis neste filtro";
+
+    // Degustações servidas — métrica nova, disponível só a partir de 20/08/2026
+    let degustSum = 0, degustDays = 0;
+    DATA.daily_form.forEach((rec) => {
+      if (!stores.includes(rec.store)) return;
+      if (!dateMonthMatchesPeriod(rec.date)) return;
+      if (rec.degustacoes === null || rec.degustacoes === undefined) return;
+      degustSum += rec.degustacoes;
+      degustDays++;
+    });
+    const degustCard = document.getElementById("kpiDegustacoes");
+    const degustSub = document.getElementById("kpiDegustacoesSub");
+    degustCard.querySelector(".kpi-number").textContent = degustDays > 0 ? degustSum.toLocaleString("pt-BR") : "—";
+    degustSub.textContent = degustDays > 0
+      ? `registrado em ${degustDays} dia${degustDays > 1 ? "s" : ""} · métrica nova desde 20/08/2026`
+      : "métrica nova, disponível a partir de 20/08/2026 (sem dados no filtro atual)";
   }
 
   function formSumForWeekStore(week, store, field) {
