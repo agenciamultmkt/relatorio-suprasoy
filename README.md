@@ -7,17 +7,35 @@ Site estático puro — **sem servidor, sem build**. Só HTML + CSS + JS + um ar
 ## Estrutura dos arquivos
 
 ```
-├── index.html      → estrutura da página (não precisa mexer no dia a dia)
-├── style.css        → visual (não precisa mexer no dia a dia)
-├── app.js            → lógica dos filtros e gráficos (não precisa mexer no dia a dia)
+├── index.html      → painel principal (não precisa mexer no dia a dia)
+├── fotos.html      → galeria de fotos, organizada por semana
+├── style.css        → visual do painel (não precisa mexer no dia a dia)
+├── photos.css        → visual da galeria (não precisa mexer no dia a dia)
+├── app.js            → lógica dos filtros e gráficos do painel (não precisa mexer no dia a dia)
+├── photos.js          → lógica da galeria e do lightbox (não precisa mexer no dia a dia)
 ├── chart.min.js      → biblioteca de gráficos, hospedada aqui dentro (não depende de nenhum site externo)
 ├── data.json        → TODOS os números do painel — é aqui que você atualiza toda semana
+├── photos-data.json  → lista de fotos e legendas, por semana — atualiza aqui quando mandar fotos novas
 └── assets/
     ├── logo-suprasoy.jpg
-    └── logo-mult.png
+    ├── logo-mult.png
+    ├── produtos-suprasoy.png
+    └── gallery/
+        ├── thumbs/   → miniaturas (grade da galeria)
+        └── full/     → versão ampliada (lightbox)
 ```
 
-**No dia a dia, o único arquivo que você edita é o `data.json`.**
+**No dia a dia, os arquivos que você edita são `data.json` (vendas) e `photos-data.json` (fotos).**
+
+## Como adicionar fotos de uma semana nova
+
+Diferente do `data.json`, aqui tem uma etapa fora do GitHub: as fotos precisam ser redimensionadas antes de subir (senão a página fica pesada e lenta). Me manda as fotos da semana normalmente, como já faz — eu redimensiono, gero a miniatura e a versão ampliada, e te devolvo os arquivos de imagem prontos + o trecho para colar no `photos-data.json`, no mesmo estilo que já faço para o `data.json`.
+
+Se um dia vocês quiserem fazer esse upload sem depender de mim, o processo é:
+1. Redimensionar cada foto para no máximo 400px de largura (miniatura) e 820px de largura (versão ampliada)
+2. Colocar a miniatura em `assets/gallery/thumbs/` e a versão ampliada em `assets/gallery/full/`, com o **mesmo nome de arquivo** nas duas pastas
+3. Adicionar uma entrada em `photos-data.json` para cada foto nova, seguindo o formato das existentes (semana, nome do arquivo, legenda)
+
 
 ## Como publicar pela primeira vez (GitHub Pages)
 

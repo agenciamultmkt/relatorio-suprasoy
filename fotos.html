@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Fotográfico — SupraSoy × Guanabara</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="photos.css">
+</head>
+<body>
+
+<div class="bg-texture" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand-lockup">
+      <img src="assets/logo-suprasoy.jpg" alt="SupraSoy" class="logo logo-supra">
+      <div class="brand-divider" aria-hidden="true"></div>
+      <img src="assets/logo-mult.png" alt="Agência Mult" class="logo logo-mult">
+    </div>
+    <nav class="topnav">
+      <a href="index.html">Painel</a>
+      <a href="fotos.html" class="active">Fotos</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero hero-photos">
+    <div class="hero-inner">
+      <p class="eyebrow">Guanabara Barra &amp; Recreio</p>
+      <h1>Book fotográfico<br><span class="hero-accent">semana a semana.</span></h1>
+      <p class="hero-sub">Todos os registros da ação de degustação, organizados por semana. Clique em qualquer foto para ampliar.</p>
+    </div>
+  </section>
+
+  <div id="galleryWeeks"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img src="assets/logo-mult.png" alt="Agência Mult" class="footer-logo">
+    <p>Painel mantido pela Agência Mult · atualizado semanalmente junto ao relatório executivo em PowerPoint.</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Foto anterior">‹</button>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Próxima foto">›</button>
+  <figure class="lightbox-figure">
+    <img id="lightboxImg" src="" alt="">
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+</div>
+
+<script src="photos.js"></script>
+</body>
+</html>

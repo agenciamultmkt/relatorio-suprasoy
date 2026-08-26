@@ -1,0 +1,127 @@
+/* Nav styling is shared in style.css (.topnav) */
+
+.hero-photos { grid-template-columns: 1fr; padding-bottom: 20px; }
+.hero-photos .hero-sub { max-width: 60ch; }
+
+/* ---------- Week sections ---------- */
+.week-section {
+  max-width: 1180px;
+  margin: 0 auto 32px;
+  padding: 0 28px;
+}
+.week-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.week-header h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--navy-deep);
+  margin: 0;
+}
+.week-header .week-count {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-soft);
+  background: var(--lilac);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+.photo-thumb {
+  position: relative;
+  aspect-ratio: 3/4;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--lilac);
+  border: 1px solid var(--line);
+}
+.photo-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+.photo-thumb:hover img { transform: scale(1.06); }
+.photo-thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20,30,60,0.55) 0%, transparent 45%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.photo-thumb:hover::after { opacity: 1; }
+.photo-thumb-caption {
+  position: absolute;
+  left: 8px; right: 8px; bottom: 8px;
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  line-height: 1.3;
+}
+.photo-thumb:hover .photo-thumb-caption { opacity: 1; }
+
+/* ---------- Lightbox ---------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 20, 38, 0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 40px;
+}
+.lightbox.open { display: flex; }
+.lightbox-figure { max-width: min(900px, 90vw); max-height: 88vh; margin: 0; text-align: center; }
+.lightbox-figure img {
+  max-width: 100%;
+  max-height: 78vh;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+}
+.lightbox-figure figcaption {
+  color: #EAEDF8;
+  font-size: 14px;
+  margin-top: 16px;
+  font-family: var(--font-body);
+}
+.lightbox-close, .lightbox-nav {
+  position: absolute;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #fff;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  transition: background 0.15s ease;
+}
+.lightbox-close:hover, .lightbox-nav:hover { background: rgba(255,255,255,0.22); }
+.lightbox-close { top: 24px; right: 24px; width: 42px; height: 42px; }
+.lightbox-nav { top: 50%; transform: translateY(-50%); width: 48px; height: 48px; font-size: 26px; }
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+
+@media (max-width: 640px) {
+  .photo-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px; }
+  .lightbox { padding: 16px; }
+  .lightbox-nav { width: 40px; height: 40px; font-size: 22px; }
+  .lightbox-close { width: 36px; height: 36px; top: 12px; right: 12px; }
+}

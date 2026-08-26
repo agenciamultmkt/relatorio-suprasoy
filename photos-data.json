@@ -1,0 +1,308 @@
+{
+  "weeks": [
+    {
+      "id": "w1",
+      "label": "14 a 20/07"
+    },
+    {
+      "id": "w2",
+      "label": "21 a 27/07"
+    },
+    {
+      "id": "w3",
+      "label": "28/07 a 03/08"
+    },
+    {
+      "id": "w4",
+      "label": "04 a 10/08"
+    },
+    {
+      "id": "w5",
+      "label": "11 a 17/08"
+    }
+  ],
+  "photos": [
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_3.jpg",
+      "caption": "Cliente levando o produto para casa"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_4.jpg",
+      "caption": "Atendimento personalizado no PDV"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_5.jpg",
+      "caption": "Explicação sobre a linha sem lactose"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_6.jpg",
+      "caption": "Interação com o público no corredor"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_7.jpg",
+      "caption": "Cliente conferindo o produto na prateleira"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_8.jpg",
+      "caption": "Consumidora com a versão em pó"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_9.jpg",
+      "caption": "Cliente satisfeito após a degustação"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_10.jpg",
+      "caption": "Atendimento e explicação dos benefícios"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_11.jpg",
+      "caption": "Momento espontâneo durante a ação"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_12.jpg",
+      "caption": "Consumidora posando com o produto"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_13.jpg",
+      "caption": "Demonstração no ponto de venda"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_14.jpg",
+      "caption": "Estrutura da ação montada na loja"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_15.jpg",
+      "caption": "Degustação com consumidor na loja"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_16.jpg",
+      "caption": "Cliente experimentando o produto"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_17.jpg",
+      "caption": "Degustação em família"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_18.jpg",
+      "caption": "Cliente levando o produto para casa"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_19.jpg",
+      "caption": "Atendimento personalizado no PDV"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_20.jpg",
+      "caption": "Explicação sobre a linha sem lactose"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_21.jpg",
+      "caption": "Interação com o público no corredor"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_22.jpg",
+      "caption": "Cliente conferindo o produto na prateleira"
+    },
+    {
+      "week": "w1",
+      "weekLabel": "14 a 20/07",
+      "file": "w1_23.jpg",
+      "caption": "Consumidora com a versão em pó"
+    },
+    {
+      "week": "w2",
+      "weekLabel": "21 a 27/07",
+      "file": "w2_01.jpg",
+      "caption": "Atendimento e explicação dos benefícios"
+    },
+    {
+      "week": "w2",
+      "weekLabel": "21 a 27/07",
+      "file": "w2_02.jpg",
+      "caption": "Consumidora com a versão em pó"
+    },
+    {
+      "week": "w2",
+      "weekLabel": "21 a 27/07",
+      "file": "w2_03.jpg",
+      "caption": "Momento espontâneo durante a ação"
+    },
+    {
+      "week": "w2",
+      "weekLabel": "21 a 27/07",
+      "file": "w2_04.jpg",
+      "caption": "Explicação sobre a linha sem lactose"
+    },
+    {
+      "week": "w2",
+      "weekLabel": "21 a 27/07",
+      "file": "w2_05.jpg",
+      "caption": "Demonstração no ponto de venda"
+    },
+    {
+      "week": "w2",
+      "weekLabel": "21 a 27/07",
+      "file": "w2_06.jpg",
+      "caption": "Interação com o público no corredor"
+    },
+    {
+      "week": "w2",
+      "weekLabel": "21 a 27/07",
+      "file": "w2_07.jpg",
+      "caption": "Cliente satisfeito após a degustação"
+    },
+    {
+      "week": "w2",
+      "weekLabel": "21 a 27/07",
+      "file": "w2_08.jpg",
+      "caption": "Degustação em família"
+    },
+    {
+      "week": "w2",
+      "weekLabel": "21 a 27/07",
+      "file": "w2_09.jpg",
+      "caption": "Atendimento personalizado no PDV"
+    },
+    {
+      "week": "w2",
+      "weekLabel": "21 a 27/07",
+      "file": "w2_10.jpg",
+      "caption": "Cliente levando o produto para casa"
+    },
+    {
+      "week": "w2",
+      "weekLabel": "21 a 27/07",
+      "file": "w2_11.jpg",
+      "caption": "Estrutura da ação montada na loja"
+    },
+    {
+      "week": "w2",
+      "weekLabel": "21 a 27/07",
+      "file": "w2_12.jpg",
+      "caption": "Consumidora posando com o produto"
+    },
+    {
+      "week": "w2",
+      "weekLabel": "21 a 27/07",
+      "file": "w2_13.jpg",
+      "caption": "Cliente experimentando o produto"
+    },
+    {
+      "week": "w3",
+      "weekLabel": "28/07 a 03/08",
+      "file": "w3_01.jpg",
+      "caption": "Explicação sobre a linha sem lactose"
+    },
+    {
+      "week": "w3",
+      "weekLabel": "28/07 a 03/08",
+      "file": "w3_02.jpg",
+      "caption": "Cliente levando o produto para casa"
+    },
+    {
+      "week": "w3",
+      "weekLabel": "28/07 a 03/08",
+      "file": "w3_03.jpg",
+      "caption": "Consumidora posando com o produto"
+    },
+    {
+      "week": "w3",
+      "weekLabel": "28/07 a 03/08",
+      "file": "w3_04.jpg",
+      "caption": "Estrutura da ação montada na loja"
+    },
+    {
+      "week": "w4",
+      "weekLabel": "04 a 10/08",
+      "file": "w4_01.jpg",
+      "caption": "Consumidora com a versão em pó"
+    },
+    {
+      "week": "w4",
+      "weekLabel": "04 a 10/08",
+      "file": "w4_02.jpg",
+      "caption": "Cliente levando o produto para casa"
+    },
+    {
+      "week": "w4",
+      "weekLabel": "04 a 10/08",
+      "file": "w4_03.jpg",
+      "caption": "Interação com o público no corredor"
+    },
+    {
+      "week": "w4",
+      "weekLabel": "04 a 10/08",
+      "file": "w4_04.jpg",
+      "caption": "Atendimento e explicação dos benefícios"
+    },
+    {
+      "week": "w5",
+      "weekLabel": "11 a 17/08",
+      "file": "w5_01.jpg",
+      "caption": "Cliente levando o produto para casa"
+    },
+    {
+      "week": "w5",
+      "weekLabel": "11 a 17/08",
+      "file": "w5_02.jpg",
+      "caption": "Atendimento e explicação dos benefícios"
+    },
+    {
+      "week": "w5",
+      "weekLabel": "11 a 17/08",
+      "file": "w5_03.jpg",
+      "caption": "Cliente satisfeito após a degustação"
+    },
+    {
+      "week": "w5",
+      "weekLabel": "11 a 17/08",
+      "file": "w5_04.jpg",
+      "caption": "Cliente conferindo o produto na prateleira"
+    },
+    {
+      "week": "w5",
+      "weekLabel": "11 a 17/08",
+      "file": "w5_05.jpg",
+      "caption": "Degustação em família"
+    }
+  ]
+}
