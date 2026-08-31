@@ -23,6 +23,10 @@
     {
       "id": "w6",
       "label": "18 a 24/08"
+    },
+    {
+      "id": "w7",
+      "label": "25 a 31/08"
     }
   ],
   "photos": [
@@ -379,6 +383,66 @@
       "weekLabel": "18 a 24/08",
       "file": "w6_12.jpg",
       "caption": "Degustação em grupo na loja"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "w7_01.jpg",
+      "caption": "Cliente na entrada da loja com o produto"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "w7_02.jpg",
+      "caption": "Consumidoras reunidas na degustação"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "w7_03.jpg",
+      "caption": "Cliente experimentando o Nature"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "w7_04.jpg",
+      "caption": "Consumidora com as latas do produto"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "w7_05.jpg",
+      "caption": "Selfie com cliente na degustação"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "w7_06.jpg",
+      "caption": "Consumidora na Praça do Pão"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "w7_07.jpg",
+      "caption": "Momento de degustação com cliente"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "w7_08.jpg",
+      "caption": "Cliente satisfeito com o produto"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "w7_09.jpg",
+      "caption": "Consumidor conferindo o Nature na prateleira"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "w7_10.jpg",
+      "caption": "Cliente e promotora na entrada da loja"
     }
   ]
 }
