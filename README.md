@@ -1,105 +1,31 @@
-# Painel SupraSoy × Guanabara
+# Processos — Agência Mult
 
-Dashboard interativo consolidando a ação de degustação SupraSoy nas lojas Guanabara Barra e Recreio: vendas reais (estoque), abordagens e previsão de vendas (formulário das promotoras), cobertura diária e comparativos semana a semana / mês a mês.
+Site interno de processos da agência, publicado com GitHub Pages (gratuito, sem hospedagem paga). Três áreas: **RH**, **Operacional** e **Documentos extras** — feito para padronizar o trabalho de todos os coordenadores e evitar que alguma etapa fique de fora.
 
-Site estático puro — **sem servidor, sem build**. Só HTML + CSS + JS + um arquivo de dados. Feito para ficar no GitHub Pages, no mesmo espírito do dashboard financeiro que vocês já mantêm.
+## Como colocar no ar
 
-## Estrutura dos arquivos
+1. Neste repositório, apague os arquivos antigos e suba o conteúdo desta pasta (`index.html`, `rh.html`, `operacional.html`, `documentos-extras.html`, `assets/`, `modelos/`, `.nojekyll`) direto na raiz do repositório (branch principal).
+2. Vá em **Settings → Pages**.
+3. Em "Build and deployment", escolha **Deploy from a branch**, selecione a branch principal e a pasta **/ (root)**.
+4. Salve. Em alguns minutos o GitHub mostra o link do site (algo como `usuario.github.io/nome-do-repositorio`).
+5. Guarde esse link — é o endereço que todos os coordenadores vão acessar.
 
-```
-├── index.html      → painel principal (não precisa mexer no dia a dia)
-├── fotos.html      → galeria de fotos, organizada por semana
-├── style.css        → visual do painel (não precisa mexer no dia a dia)
-├── photos.css        → visual da galeria (não precisa mexer no dia a dia)
-├── app.js            → lógica dos filtros e gráficos do painel (não precisa mexer no dia a dia)
-├── photos.js          → lógica da galeria e do lightbox (não precisa mexer no dia a dia)
-├── chart.min.js      → biblioteca de gráficos, hospedada aqui dentro (não depende de nenhum site externo)
-├── data.json        → TODOS os números do painel — é aqui que você atualiza toda semana
-├── photos-data.json  → lista de fotos e legendas, por semana — atualiza aqui quando mandar fotos novas
-└── assets/
-    ├── logo-suprasoy.jpg
-    ├── logo-mult.png
-    ├── produtos-suprasoy.png
-    └── gallery/
-        ├── thumbs/   → miniaturas (grade da galeria)
-        └── full/     → versão ampliada (lightbox)
-```
+## Estrutura
 
-**No dia a dia, os arquivos que você edita são `data.json` (vendas) e `photos-data.json` (fotos).**
+- `index.html` — página inicial, com o menu para as 3 áreas
+- `rh.html` — passo a passo de RH (briefing → divulgação → recrutamento → documentos/ASO → admissão → planilhas → onboarding → grupos/Trade Pro → cartas → Mob2Con/sistema da rede)
+- `operacional.html` — rotina diária e mensal de controle
+- `documentos-extras.html` — modelos, sistemas usados (sem senha) e glossário
+- `modelos/rh/` e `modelos/operacional/` — arquivos .docx/.xlsx editáveis citados nas páginas acima
+- `assets/style.css` — estilo único, compartilhado por todas as páginas
 
-## Como adicionar fotos de uma semana nova
+## Importante sobre segurança
 
-Diferente do `data.json`, aqui tem uma etapa fora do GitHub: as fotos precisam ser redimensionadas antes de subir (senão a página fica pesada e lenta). Me manda as fotos da semana normalmente, como já faz — eu redimensiono, gero a miniatura e a versão ampliada, e te devolvo os arquivos de imagem prontos + o trecho para colar no `photos-data.json`, no mesmo estilo que já faço para o `data.json`.
+Este site fica público na internet para qualquer pessoa com o link (mesmo que o repositório seja privado, isso é uma limitação do GitHub Pages fora do plano Enterprise). Por isso **não coloque senhas, dados bancários ou informação sensível de colaboradores/clientes aqui** — só nome de sistemas e processos.
 
-Se um dia vocês quiserem fazer esse upload sem depender de mim, o processo é:
-1. Redimensionar cada foto para no máximo 400px de largura (miniatura) e 820px de largura (versão ampliada)
-2. Colocar a miniatura em `assets/gallery/thumbs/` e a versão ampliada em `assets/gallery/full/`, com o **mesmo nome de arquivo** nas duas pastas
-3. Adicionar uma entrada em `photos-data.json` para cada foto nova, seguindo o formato das existentes (semana, nome do arquivo, legenda)
+## Editar conteúdo
 
+Qualquer página é um arquivo `.html` comum — dá pra editar direto pelo navegador do GitHub (ícone de lápis, "Edit this file"), sem precisar saber programar. Os modelos em `modelos/` são arquivos do Word/Excel normais — baixe, preencha e use.
 
-## Como publicar pela primeira vez (GitHub Pages)
-
-1. Crie um repositório novo no GitHub (público), por exemplo `suprasoy-dashboard`.
-2. Suba estes 5 itens (`index.html`, `style.css`, `app.js`, `data.json`, pasta `assets/`) para a raiz do repositório — pode arrastar e soltar direto na página do GitHub ("Add file → Upload files").
-3. Vá em **Settings → Pages**. Em "Source", selecione a branch `main` e a pasta `/root`. Salve.
-4. Em alguns minutos o GitHub mostra o link do site, algo como:
-   `https://SEU-USUARIO.github.io/suprasoy-dashboard/`
-5. Esse link é fixo — pode mandar pro cliente e ele sempre vai ver a versão mais atual.
-
-## Como atualizar toda semana
-
-Mesmo fluxo que vocês já usam no dashboard financeiro (editor web do GitHub):
-
-1. No repositório, abra o arquivo `data.json`.
-2. Clique no ícone de lápis (editar).
-3. Adicione a nova semana dentro da lista `"weeks_real"` (copie o formato de uma semana existente):
-
-```json
-{
-  "id": "W6",
-  "start": "2026-08-18",
-  "end": "2026-08-24",
-  "label": "18 a 24/08",
-  "barra": { "original": 0, "nature": 0, "sache": 0, "total": 0 },
-  "recreio": { "original": 0, "nature": 0, "sache": 0, "total": 0 }
-}
-```
-
-4. Adicione os dias correspondentes em `"daily_coverage"` (com/sem abordagem, motivo se houver) e em `"daily_form"` (se novas respostas do formulário chegarem — abordagens, previsão total, previsão sachê, previsão latas).
-5. Atualize `"meta.generated"` para a data de hoje.
-6. Role até o fim da página e clique em **"Commit changes"**.
-
-Pronto — o site atualiza sozinho, sem precisar mexer em mais nada. Os filtros, gráficos, KPIs e a tabela recalculam tudo automaticamente a partir do que estiver no `data.json`.
-
-## O que cada bloco de dado alimenta
-
-| Campo em `data.json` | Onde aparece no site |
-|---|---|
-| `weeks_real` | Vendas reais, gráfico de evolução semanal, mix de SKU, tabela detalhada |
-| `daily_coverage` | Calendário de cobertura (com/sem abordagem), venda diária real |
-| `daily_form` | Abordagens registradas, previsão das promotoras, gráfico Previsão × Real, gap previsão→real |
-| `meta.barra_pause` | Marca o intervalo pausado no calendário de cobertura (hachurado) |
-| `meta.notes` | Lista de notas metodológicas no rodapé da página |
-
-## Decisões de metodologia já aplicadas (para lembrete futuro)
-
-- **Vendas reais** = estoque inicial − estoque final da semana, por SKU, com detecção de reposição no meio da semana (quando o estoque *sobe* entre duas contagens, isso é tratado como reabastecimento, não como venda negativa).
-- **Abordagens "Bastante"** (respostas de texto no formulário, sem número) foram convertidas para uma estimativa de ~50, sinalizadas como estimadas — combinado com o cliente em 20/08/2026.
-- **Guanabara Barra ficou sem ação ativa entre 01/08 e 17/08/2026** (retomada em 18/08) — esse período aparece hachurado no calendário, não como "dado faltando".
-- **Gap previsão → real** é calculado *dia a dia*, só nos dias em que existe tanto a previsão do formulário quanto a venda real diária (via `daily_coverage`). Comparar a previsão de uma semana parcialmente respondida contra a venda real da semana inteira dá um resultado enganoso — por isso não fazemos isso em nenhum lugar do painel.
-- Datas do formulário com erro óbvio de digitação (ano errado, formato trocado) foram corrigidas na base de dados a partir do carimbo de data/hora do envio.
-
-## Rodando localmente antes de publicar (opcional)
-
-Se quiser conferir como ficou antes de subir pro GitHub:
-
-```bash
-cd pasta-do-dashboard
-python3 -m http.server 8000
-```
-
-Depois abra `http://localhost:8000` no navegador.
-
-## Histórico de correções
-
-**20/08/2026** — A biblioteca de gráficos (Chart.js) estava sendo carregada de um CDN externo (cdnjs.cloudflare.com). Em algumas redes (firewall corporativo, bloqueador de anúncios) esse domínio fica bloqueado, e quando isso acontece os gráficos, o calendário de cobertura e a tabela ficam em branco — mas os textos estáticos e os números que não dependem de gráfico continuam aparecendo normalmente, o que torna o problema difícil de notar à primeira vista. A correção foi trazer o Chart.js para dentro do próprio repositório (`chart.min.js`), então o site não depende mais de nenhum site externo para funcionar. Se o painel voltar a aparecer parcialmente em branco no futuro, aperte **F12 → Console** e veja se há alguma linha vermelha — ela vai dizer exatamente o que falhou.
+---
+Página criada em 07/09/2026, substituindo a estrutura anterior por etapas (Contratação/Onboarding/Gestão). Ver também o [Painel de Automação](https://claude.ai/code/artifact/e1c943a1-46e1-4c1c-9ff3-556bf6c32e34) para o quadro geral de todas as frentes.

@@ -1,0 +1,142 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Clientes — Agência Mult</title><link rel="stylesheet" href="assets/style.css"></head><body>
+<nav class="top"><div class="wrap wide"><a class="brand brand-logo" href="index.html"><img src="assets/logo-agencia-mult.png" alt="Agência Mult"><span class="brand-title">Central de Gestão</span></a><div class="links"><a href="rh.html">RH</a><a href="operacional.html">Operacional</a><a href="clientes.html" class="active">Clientes</a><a href="fechamento-mensal.html">Fechamento</a><a href="documentos-extras.html">Documentos</a></div></div></nav>
+<div class="wrap wide"><header class="page"><span class="eyebrow">Gestão de contas</span><h1>Clientes, entregas e prazos</h1><p class="lead">Rotinas internas, entregas ao cliente, faturamento e particularidades de cada operação. BI e resultados ficam dentro da conta correspondente.</p></header>
+<p class="client-hint">Selecione uma conta para visualizar somente as informações daquele cliente.</p><div class="client-nav" role="tablist" aria-label="Clientes"><a href="#calendario" class="active" role="tab">Calendário</a><a href="#uau-rj" role="tab">UAU RJ</a><a href="#uau-none" role="tab">UAU NO/NE</a><a href="#ritter" role="tab">Ritter</a><a href="#sakura" role="tab">Sakura</a><a href="#josapar" role="tab">Josapar</a><a href="#outras" role="tab">Outras Ações</a></div>
+<section id="calendario" class="client-view active">
+  <div class="section-label">Calendário geral de entregas</div>
+  <div class="calendar-toolbar">
+    <button type="button" class="calendar-btn" id="calPrev" aria-label="Mês anterior">←</button>
+    <div>
+      <h2 id="calendarTitle">Calendário</h2>
+      <p>As demandas com data definida aparecem no dia correspondente. Entregas semanais entram automaticamente em todas as segundas-feiras.</p>
+    </div>
+    <button type="button" class="calendar-btn" id="calNext" aria-label="Próximo mês">→</button>
+  </div>
+
+  <div class="calendar-windows">
+    <div class="calendar-window"><b>1ª semana</b><span>UAU RJ — Pontos Extras (Hellen)</span><span>UAU NO/NE — Pontos Extras (Débora)</span><span>Ritter — Pacote de faturamento (Andreza)</span><span>Ritter — Reunião com vendedores (Débora)</span></div>
+    <div class="calendar-window"><b>Rotinas mensais sem dia fixo</b><span>Sakura — alinhamento com Iracema / roteiro e ocorrências (Débora)</span><span>Sakura — NF + boleto com 21 dias da emissão (Andreza)</span><span>Josapar — reunião com Claudinei para impressão das folhas de ponto (Débora)</span></div>
+  </div>
+
+  <div class="calendar-scroll">
+    <div class="calendar-grid calendar-weekdays" aria-hidden="true">
+      <div>DOM</div><div>SEG</div><div>TER</div><div>QUA</div><div>QUI</div><div>SEX</div><div>SÁB</div>
+    </div>
+    <div class="calendar-grid" id="calendarGrid" aria-live="polite"></div>
+  </div>
+
+  <div class="calendar-conditional">
+    <h3>Demandas condicionais — Outras Ações</h3>
+    <p><b>Ação mensal:</b> relatório na primeira semana do mês seguinte. <b>Ação curta:</b> relatório em até 5 dias após o término da ação.</p>
+  </div>
+</section>
+
+<section id="uau-rj" class="client-card client-view"><h2>UAU RJ</h2><div class="meta"><span>Empresa: MULTI TRADE MARKETING</span><span>Redes: Guanabara · Atacadão · Prezunic · Mundial · Assaí · Megabox</span></div>
+<div class="subcard"><h3>Indicadores</h3><p class="compact">Andreza · mensal · período do dia 1 ao último dia · <span class="deadline">envio até dia 08 do mês subsequente</span>. Fonte: Trade Pro. Atualizar base Indicadores UAU com caixas abertas por loja, turnover, ruptura e efetividade.</p></div>
+<div class="subcard"><h3>Pontos Extras</h3><p class="compact">Hellen · mensal · <span class="deadline">1ª semana do mês subsequente</span>. Fotos do Trade Pro + grupos de WhatsApp. Gerar um PowerPoint separado por rede e enviar ao executivo responsável + André Bolzan.</p></div>
+<div class="subcard"><h3>Roteiro de Atendimento e Faturamento</h3><p class="compact">Andreza · <span class="deadline">dia 18 do mês vigente</span>. Usar a base existente, conferir lojas/frequência/dias, identificar promotor somente pela matrícula do Trade Pro e calcular valor por loja. A soma das lojas deve ser exatamente igual ao valor da fatura. Enviar à UAU e emitir NFs somente após o OK.</p></div>
+<div class="subcard"><h3>Power BI</h3><p class="compact">Atualização realizada por Gabriella com Felix. <span class="status-note">Escopo detalhado ainda a documentar.</span></p></div></section>
+
+<section id="uau-none" class="client-card client-view"><h2>UAU NO/NE</h2><div class="meta"><span>Empresa: MULTI TRADE MARKETING</span></div><div class="subcard"><h3>Indicadores</h3><p class="compact">Andreza · mesmo padrão UAU RJ · <span class="deadline">até dia 08 do mês subsequente</span>.</p></div><div class="subcard"><h3>Pontos Extras</h3><p class="compact">Débora · <span class="deadline">1ª semana do mês subsequente</span>. Mesmo protocolo de coleta do RJ, porém em um único arquivo consolidado com todas as redes atendidas.</p></div><div class="subcard"><h3>Roteiro de Atendimento e Faturamento</h3><p class="compact">Andreza · <span class="deadline">dia 18 do mês vigente</span>.</p></div></section>
+
+<section id="ritter" class="client-card client-view"><h2>Ritter</h2><div class="meta"><span>Empresa: MULTI TRADE MARKETING</span><span>Coordenação: Débora</span><span>Equipe: promotores exclusivos</span></div><div class="subcard"><h3>Pacote Mensal de Faturamento</h3><p class="compact">Andreza · 1ª semana do mês subsequente. Fatura Descritiva + boleto + NF + FGTS do mês anterior/comprovante + detalhamento da guia FGTS (RE) + INSS. Boleto com vencimento até dia 15.</p></div><div class="subcard"><h3>Relatório Executivo Mensal</h3><p class="compact">Débora · <span class="deadline">até dia 10 do mês subsequente</span>. Conteúdo fixo: Efetividade · Ocorrências · Pontos Extras.</p></div><div class="subcard"><h3>Reunião mensal</h3><p class="compact">Débora · agendar reunião com os vendedores na <span class="deadline">primeira semana do mês</span>.</p></div></section>
+
+<section id="sakura" class="client-card client-view"><h2>Sakura</h2><div class="meta"><span>Empresa: MULTI TRADE MARKETING</span><span>Promotora: Bárbara</span><span>Vendedora: Iracema</span></div><div class="subcard"><h3>Alinhamento mensal</h3><p class="compact">Débora · conferir com Bárbara ocorrências/particularidades das lojas e alinhar com Iracema se o roteiro permanece igual ou precisa de alterações.</p></div><div class="subcard"><h3>Relatório Mensal</h3><p class="compact">Andreza · Efetividade + Pontos Extras · <span class="deadline">até dia 10 do mês subsequente</span>.</p></div><div class="subcard"><h3>Cobrança</h3><p class="compact">Andreza · enviar somente NF + boleto. O boleto tem prazo de 21 dias a partir da emissão. Não há fatura descritiva nem roteiro para faturamento.</p></div></section>
+
+<section id="josapar" class="client-card client-view"><h2>Josapar</h2><div class="meta"><span>Empresa: FORMA TRADE MKT</span></div><div class="subcard"><h3>Promotores — Gestão DP/RH</h3><p class="compact">A Josapar faz a gestão operacional em sistema próprio, sem acesso da Agência Mult e sem participação da agência no grupo de fotos. A Mult atua principalmente em DP/RH, comunicação e campanhas pontuais.</p><ul class="compact"><li><b>Folha de ponto:</b> Débora agenda reunião mensal com Claudinei, que leva o notebook com acesso ao sistema para impressão das folhas do mês completo.</li></ul></div>
+<div class="subcard"><h3>SupraSoy — 2 demonstradoras</h3><p class="compact">Débora · relatório toda segunda-feira. Demonstradoras preenchem Google Forms diariamente; Claudinei envia vendas reais da semana anterior; Débora reúne Excel do Forms + vendas + fotos do WhatsApp e envia ao chat de IA. A IA gera o PPT e os arquivos do relatório interativo. Revisar, enviar PPT, atualizar GitHub e validar o link publicado.</p></div>
+<div class="subcard"><h3>Feijão Tio João — 1 demonstradora</h3><p class="compact">Débora · mesmo fluxo semanal: Excel do Google Forms + vendas reais do Claudinei + fotos → IA → revisão → PowerPoint → envio toda segunda-feira.</p></div>
+<div class="subcard"><h3>Faturamento</h3><p class="compact">Andreza · <span class="deadline">dia 16 do mês vigente</span>. Preparar Excel da fatura → enviar para Claudinei validar → aguardar OK → providenciar NF → enviar por e-mail Excel aprovado + NF.</p></div></section>
+
+<section id="outras" class="client-card client-view"><h2>Outras Ações / Novos Clientes</h2><div class="meta"><span>Exemplos: Segafredo · Banana Brasil · SuperGoma</span></div><p class="compact">Processo replicável para ações ainda não fixas. As demonstradoras preenchem Google Forms diariamente com informações da execução no PDV.</p><div class="subcard"><h3>Prazo de relatório</h3><ul class="compact"><li><b>Ação mensal:</b> envio na primeira semana do mês seguinte.</li><li><b>Ação curta:</b> envio em até 5 dias após o término.</li></ul></div><div class="subcard"><h3>Checklist de abertura</h3><ul class="check"><li>Definir cliente, marca/produto e empresa/CNPJ responsável</li><li>Definir período, lojas, equipe e coordenação responsável</li><li>Criar Google Forms da ação e testar</li><li>Criar grupo da ação com cliente e demonstradoras/promotores</li><li>Definir padrão de fotos e informações</li><li>Confirmar como serão recebidas as vendas reais, quando aplicável</li><li>Definir prazo e destinatários do relatório</li><li>Checar com o cliente sobre treinamento de produto e organizar quando aplicável</li></ul></div></section>
+<footer class="page">Agência Mult · Clientes · <a href="index.html">← voltar</a></footer></div><script>
+(function(){
+  const tabs = Array.from(document.querySelectorAll('.client-nav a'));
+  const views = Array.from(document.querySelectorAll('.client-view'));
+  function showView(id, updateHash){
+    if(!document.getElementById(id)) id = 'calendario';
+    views.forEach(v => v.classList.toggle('active', v.id === id));
+    tabs.forEach(t => {
+      const on = t.getAttribute('href') === '#' + id;
+      t.classList.toggle('active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    if(updateHash && history.replaceState){ history.replaceState(null, '', '#' + id); }
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+  tabs.forEach(tab => tab.addEventListener('click', function(e){
+    e.preventDefault();
+    showView(this.getAttribute('href').slice(1), true);
+  }));
+  const initial = location.hash ? location.hash.slice(1) : 'calendario';
+  showView(initial, false);
+
+  const monthlyEvents = {
+    8: [
+      {client:'UAU RJ', task:'Indicadores do mês anterior', owner:'Andreza'},
+      {client:'UAU NO/NE', task:'Indicadores do mês anterior', owner:'Andreza'}
+    ],
+    10: [
+      {client:'Ritter', task:'Relatório Executivo Mensal', owner:'Débora'},
+      {client:'Sakura', task:'Efetividade + Pontos Extras', owner:'Andreza'}
+    ],
+    16: [{client:'Josapar', task:'Faturamento do mês vigente', owner:'Andreza'}],
+    18: [
+      {client:'UAU RJ', task:'Roteiro de Atendimento e Faturamento', owner:'Andreza'},
+      {client:'UAU NO/NE', task:'Roteiro de Atendimento e Faturamento', owner:'Andreza'}
+    ]
+  };
+  const mondayEvents = [
+    {client:'Josapar · SupraSoy', task:'Relatório semanal + atualizar GitHub', owner:'Débora'},
+    {client:'Josapar · Feijão Tio João', task:'Relatório semanal da ação', owner:'Débora'}
+  ];
+
+  const title = document.getElementById('calendarTitle');
+  const grid = document.getElementById('calendarGrid');
+  const prev = document.getElementById('calPrev');
+  const next = document.getElementById('calNext');
+  const monthNames = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+  const now = new Date();
+  let viewYear = now.getFullYear();
+  let viewMonth = now.getMonth();
+
+  function esc(v){ return String(v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function eventHTML(e, kind){
+    return '<div class="cal-event '+(kind||'')+'"><b>'+esc(e.client)+'</b><span>'+esc(e.task)+'</span><small>'+esc(e.owner)+'</small></div>';
+  }
+  function renderCalendar(){
+    if(!grid || !title) return;
+    title.textContent = monthNames[viewMonth] + ' ' + viewYear;
+    grid.innerHTML = '';
+    const first = new Date(viewYear, viewMonth, 1);
+    const lastDay = new Date(viewYear, viewMonth + 1, 0).getDate();
+    const startDay = first.getDay();
+    const prevLast = new Date(viewYear, viewMonth, 0).getDate();
+    const totalCells = 42;
+    for(let i=0;i<totalCells;i++){
+      const dayNum = i - startDay + 1;
+      const cell = document.createElement('div');
+      cell.className = 'calendar-day';
+      let d, inMonth = true;
+      if(dayNum < 1){ d = prevLast + dayNum; inMonth = false; }
+      else if(dayNum > lastDay){ d = dayNum - lastDay; inMonth = false; }
+      else d = dayNum;
+      if(!inMonth) cell.classList.add('outside');
+      const date = new Date(viewYear, viewMonth, dayNum);
+      const isToday = inMonth && d===now.getDate() && viewMonth===now.getMonth() && viewYear===now.getFullYear();
+      if(isToday) cell.classList.add('today');
+      cell.innerHTML = '<div class="calendar-date">'+d+(isToday?'<span>hoje</span>':'')+'</div>';
+      if(inMonth){
+        let html='';
+        if(date.getDay()===1) mondayEvents.forEach(e => html += eventHTML(e,'weekly'));
+        if(monthlyEvents[d]) monthlyEvents[d].forEach(e => html += eventHTML(e,'deadline-event'));
+        if(html) cell.insertAdjacentHTML('beforeend','<div class="calendar-events">'+html+'</div>');
+      }
+      grid.appendChild(cell);
+    }
+  }
+  if(prev) prev.addEventListener('click',()=>{ viewMonth--; if(viewMonth<0){viewMonth=11;viewYear--;} renderCalendar(); });
+  if(next) next.addEventListener('click',()=>{ viewMonth++; if(viewMonth>11){viewMonth=0;viewYear++;} renderCalendar(); });
+  renderCalendar();
+})();
+</script></body></html>
