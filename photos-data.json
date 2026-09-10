@@ -27,6 +27,10 @@
     {
       "id": "w7",
       "label": "25 a 31/08"
+    },
+    {
+      "id": "w8",
+      "label": "01 a 07/09"
     }
   ],
   "photos": [
@@ -443,6 +447,108 @@
       "weekLabel": "25 a 31/08",
       "file": "w7_10.jpg",
       "caption": "Cliente e promotora na entrada da loja"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "race_01.jpg",
+      "caption": "Corrida das Patroas — equipe SupraSoy na ativação",
+      "tag": "Ação especial"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "race_02.jpg",
+      "caption": "Corrida das Patroas — corredora com medalha e produto",
+      "tag": "Ação especial"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "race_03.jpg",
+      "caption": "Corrida das Patroas — participantes na tenda SupraSoy",
+      "tag": "Ação especial"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "race_04.jpg",
+      "caption": "Corrida das Patroas — degustação para os corredores",
+      "tag": "Ação especial"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "race_05.jpg",
+      "caption": "Corrida das Patroas — atendimento no ponto de ativação",
+      "tag": "Ação especial"
+    },
+    {
+      "week": "w7",
+      "weekLabel": "25 a 31/08",
+      "file": "race_06.jpg",
+      "caption": "Corrida das Patroas — corredora com brinde SupraSoy",
+      "tag": "Ação especial"
+    },
+    {
+      "week": "w8",
+      "weekLabel": "01 a 07/09",
+      "file": "w8_01.jpg",
+      "caption": "Cliente com o produto na Praça do Pão"
+    },
+    {
+      "week": "w8",
+      "weekLabel": "01 a 07/09",
+      "file": "w8_02.jpg",
+      "caption": "Consumidoras na degustação"
+    },
+    {
+      "week": "w8",
+      "weekLabel": "01 a 07/09",
+      "file": "w8_03.jpg",
+      "caption": "Consumidora com o sachê e o copinho"
+    },
+    {
+      "week": "w8",
+      "weekLabel": "01 a 07/09",
+      "file": "w8_04.jpg",
+      "caption": "Cliente com o folheto de receitas"
+    },
+    {
+      "week": "w8",
+      "weekLabel": "01 a 07/09",
+      "file": "w8_05.jpg",
+      "caption": "Consumidora experimentando o produto"
+    },
+    {
+      "week": "w8",
+      "weekLabel": "01 a 07/09",
+      "file": "w8_06.jpg",
+      "caption": "Cliente com o produto na loja"
+    },
+    {
+      "week": "w8",
+      "weekLabel": "01 a 07/09",
+      "file": "w8_07.jpg",
+      "caption": "Consumidora com o folheto SupraSoy"
+    },
+    {
+      "week": "w8",
+      "weekLabel": "01 a 07/09",
+      "file": "w8_08.jpg",
+      "caption": "Cliente segurando a lata do produto"
+    },
+    {
+      "week": "w8",
+      "weekLabel": "01 a 07/09",
+      "file": "w8_09.jpg",
+      "caption": "Consumidor com o Original em lata"
+    },
+    {
+      "week": "w8",
+      "weekLabel": "01 a 07/09",
+      "file": "w8_10.jpg",
+      "caption": "Criança degustando o produto"
     }
   ]
 }

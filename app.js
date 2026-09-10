@@ -62,9 +62,8 @@
     return count;
   }
   function weekMonth(week) {
-    const jul = dayCountInMonth(week.start, week.end, 7);
-    const ago = dayCountInMonth(week.start, week.end, 8);
-    return ago > jul ? "ago" : "jul";
+    const counts = { jul: dayCountInMonth(week.start, week.end, 7), ago: dayCountInMonth(week.start, week.end, 8), set: dayCountInMonth(week.start, week.end, 9) };
+    return Object.keys(counts).reduce((a, b) => (counts[a] >= counts[b] ? a : b));
   }
   function weekMatchesPeriod(week) {
     if (state.period === "all") return true;
@@ -89,7 +88,7 @@
   function dateMonthMatchesPeriod(dateISO) {
     if (state.period === "all") return true;
     const month = parseInt(dateISO.slice(5, 7), 10);
-    return (state.period === "jul" && month === 7) || (state.period === "ago" && month === 8);
+    return (state.period === "jul" && month === 7) || (state.period === "ago" && month === 8) || (state.period === "set" && month === 9);
   }
 
   function formSumForWeek(week, field) {

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-09-01",
+    "generated": "2026-09-08",
     "stores": [
       "barra",
       "recreio"
@@ -19,10 +19,11 @@
       "Abordagens e previsão de vendas vêm do formulário preenchido pelas promotoras em campo — a previsão NÃO considera desistências no checkout.",
       "Valores de abordagem marcados como estimados (~50) referem-se a respostas textuais (\"Bastante\") do formulário, convertidas em estimativa aproximada a pedido do cliente.",
       "A Guanabara Barra ficou sem ação promocional ativa entre 01/08 e 17/08/2026 (retomada em 18/08); vendas reais nesse período vieram de giro de prateleira, sem degustação ativa.",
-      "SupraSoy Sachê no Guanabara Recreio segue sem estoque desde 12/08/2026 — mais de 3 semanas de ruptura contínua nesse SKU.",
-      "SupraSoy Original no Guanabara Recreio foi reabastecido em 20/08/2026 (+28 unidades), encerrando a ruptura que durava desde 12/08.",
-      "\"Degustações servidas\" é uma métrica nova do formulário, preenchida pelas promotoras a partir de 20/08/2026 — períodos anteriores não têm esse dado.",
-      "Guanabara Barra teve forte recuperação em 25-31/08 (+96,3% vs semana anterior), com giro equilibrado entre os três SKUs."
+      "SupraSoy Sachê no Guanabara Recreio ficou sem estoque de 12/08 a 31/08/2026.",
+      "SupraSoy Original no Guanabara Recreio foi reabastecido em 20/08/2026, mas voltou a zerar até 01/09.",
+      "ALERTA: a partir de 01/09/2026, o Guanabara Recreio entrou em ruptura total (Original, Nature e Sachê simultaneamente zerados), confirmada pelo cliente para a semana inteira (01 a 07/09).",
+      "A semana de 01-07/09 não teve contagem em 06/09 (domingo) nem 07/09 (feriado) — o total da semana reflete os dados até 05/09.",
+      "\"Degustações servidas\" é uma métrica nova do formulário, preenchida pelas promotoras a partir de 20/08/2026 — períodos anteriores não têm esse dado."
     ]
   },
   "weeks_real": [
@@ -150,6 +151,24 @@
         "nature": 23,
         "sache": 0,
         "total": 29
+      }
+    },
+    {
+      "id": "W8",
+      "start": "2026-09-01",
+      "end": "2026-09-07",
+      "label": "01 a 07/09 (07/09 feriado, sem contagem)",
+      "barra": {
+        "original": 8,
+        "nature": 7,
+        "sache": 8,
+        "total": 23
+      },
+      "recreio": {
+        "original": 0,
+        "nature": 0,
+        "sache": 0,
+        "total": 0
       }
     }
   ],
@@ -575,9 +594,153 @@
       "status": "ok",
       "vendas": 13,
       "obs": "acumula 30+31/08"
+    },
+    {
+      "date": "2026-09-01",
+      "store": "barra",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-09-02",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 0
+    },
+    {
+      "date": "2026-09-03",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 7
+    },
+    {
+      "date": "2026-09-04",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 12
+    },
+    {
+      "date": "2026-09-05",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 4
+    },
+    {
+      "date": "2026-09-06",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-09-07",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "feriado"
+    },
+    {
+      "date": "2026-09-01",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 0,
+      "obs": "ruptura total (Original, Nature e Sachê zerados)"
+    },
+    {
+      "date": "2026-09-02",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 0,
+      "obs": "ruptura total"
+    },
+    {
+      "date": "2026-09-03",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 0,
+      "obs": "ruptura total"
+    },
+    {
+      "date": "2026-09-04",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 0,
+      "obs": "ruptura total"
+    },
+    {
+      "date": "2026-09-05",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 0,
+      "obs": "ruptura total"
+    },
+    {
+      "date": "2026-09-06",
+      "store": "recreio",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-09-07",
+      "store": "recreio",
+      "status": "sem_abordagem",
+      "motivo": "feriado"
     }
   ],
   "daily_form": [
+    {
+      "timestamp": "2026-09-01T16:26:16.722000",
+      "date": "2026-01-09",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 46,
+      "abordagens_estimated": false,
+      "degustacoes": 46,
+      "previsao_total": 2,
+      "previsao_original": 0,
+      "previsao_nature": 1,
+      "previsao_sache": 1,
+      "obs": "….."
+    },
+    {
+      "timestamp": "2026-09-03T16:04:05.005000",
+      "date": "2026-03-09",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 50,
+      "abordagens_estimated": false,
+      "degustacoes": 50,
+      "previsao_total": 6,
+      "previsao_original": 0,
+      "previsao_nature": 1,
+      "previsao_sache": 5,
+      "obs": ".."
+    },
+    {
+      "timestamp": "2026-09-04T16:07:48.488000",
+      "date": "2026-04-09",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 50,
+      "abordagens_estimated": false,
+      "degustacoes": 49,
+      "previsao_total": 4,
+      "previsao_original": 0,
+      "previsao_nature": 1,
+      "previsao_sache": 3,
+      "obs": "…"
+    },
+    {
+      "timestamp": "2026-09-05T16:05:06.708000",
+      "date": "2026-05-09",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 160,
+      "abordagens_estimated": false,
+      "degustacoes": 155,
+      "previsao_total": 8,
+      "previsao_original": 2,
+      "previsao_nature": 0,
+      "previsao_sache": 6,
+      "obs": "…"
+    },
     {
       "timestamp": "2026-07-08T16:14:52.633000",
       "date": "2026-07-08",
@@ -1361,6 +1524,20 @@
       "previsao_nature": 5,
       "previsao_sache": 0,
       "obs": "Sentem falta do sachê"
+    },
+    {
+      "timestamp": "2026-09-01T15:54:50.827000",
+      "date": "2026-09-01",
+      "store": "recreio",
+      "demonstrator": "TAMIRES",
+      "abordagens": 50,
+      "abordagens_estimated": false,
+      "degustacoes": 20,
+      "previsao_total": 0,
+      "previsao_original": 0,
+      "previsao_nature": 0,
+      "previsao_sache": 0,
+      "obs": "Todos os produtos esgotados nas prateleiras"
     }
   ]
 }
