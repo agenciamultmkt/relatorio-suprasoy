@@ -31,6 +31,10 @@
     {
       "id": "w8",
       "label": "01 a 07/09"
+    },
+    {
+      "id": "w9",
+      "label": "08 a 14/09"
     }
   ],
   "photos": [
@@ -549,6 +553,72 @@
       "weekLabel": "01 a 07/09",
       "file": "w8_10.jpg",
       "caption": "Criança degustando o produto"
+    },
+    {
+      "week": "w9",
+      "weekLabel": "08 a 14/09",
+      "file": "w9_01.jpg",
+      "caption": "Cliente com o copinho de degustação"
+    },
+    {
+      "week": "w9",
+      "weekLabel": "08 a 14/09",
+      "file": "w9_02.jpg",
+      "caption": "Consumidora experimentando o produto"
+    },
+    {
+      "week": "w9",
+      "weekLabel": "08 a 14/09",
+      "file": "w9_03.jpg",
+      "caption": "Consumidora com o folheto de receitas"
+    },
+    {
+      "week": "w9",
+      "weekLabel": "08 a 14/09",
+      "file": "w9_04.jpg",
+      "caption": "Consumidora com o Nature em lata"
+    },
+    {
+      "week": "w9",
+      "weekLabel": "08 a 14/09",
+      "file": "w9_05.jpg",
+      "caption": "Cliente com folheto e produto"
+    },
+    {
+      "week": "w9",
+      "weekLabel": "08 a 14/09",
+      "file": "w9_06.jpg",
+      "caption": "Consumidora com o produto satisfeita"
+    },
+    {
+      "week": "w9",
+      "weekLabel": "08 a 14/09",
+      "file": "w9_07.jpg",
+      "caption": "Cliente segurando o copinho de degustação"
+    },
+    {
+      "week": "w9",
+      "weekLabel": "08 a 14/09",
+      "file": "w9_08.jpg",
+      "caption": "Consumidora com o produto em pó"
+    },
+    {
+      "week": "w9",
+      "weekLabel": "08 a 14/09",
+      "file": "w9_09.jpg",
+      "caption": "Cliente com o produto no carrinho"
+    },
+    {
+      "week": "w9",
+      "weekLabel": "08 a 14/09",
+      "file": "w9_10.jpg",
+      "caption": "Consumidora com copo e coqueteleira SupraSoy"
+    },
+    {
+      "week": "w9",
+      "weekLabel": "08 a 14/09",
+      "file": "w9_11.jpg",
+      "caption": "Consumidora com copo de degustação"
     }
   ]
 }

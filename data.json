@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-09-08",
+    "generated": "2026-09-15",
     "stores": [
       "barra",
       "recreio"
@@ -23,7 +23,8 @@
       "SupraSoy Original no Guanabara Recreio foi reabastecido em 20/08/2026, mas voltou a zerar até 01/09.",
       "ALERTA: a partir de 01/09/2026, o Guanabara Recreio entrou em ruptura total (Original, Nature e Sachê simultaneamente zerados), confirmada pelo cliente para a semana inteira (01 a 07/09).",
       "A semana de 01-07/09 não teve contagem em 06/09 (domingo) nem 07/09 (feriado) — o total da semana reflete os dados até 05/09.",
-      "\"Degustações servidas\" é uma métrica nova do formulário, preenchida pelas promotoras a partir de 20/08/2026 — períodos anteriores não têm esse dado."
+      "\"Degustações servidas\" é uma métrica nova do formulário, preenchida pelas promotoras a partir de 20/08/2026 — períodos anteriores não têm esse dado.",
+      "A partir de 01/09/2026, a ação de degustação no Guanabara Recreio foi encerrada; o painel segue acompanhando apenas o Guanabara Barra a partir da semana de 08-14/09."
     ]
   },
   "weeks_real": [
@@ -163,6 +164,24 @@
         "nature": 7,
         "sache": 8,
         "total": 23
+      },
+      "recreio": {
+        "original": 0,
+        "nature": 0,
+        "sache": 0,
+        "total": 0
+      }
+    },
+    {
+      "id": "W9",
+      "start": "2026-09-08",
+      "end": "2026-09-14",
+      "label": "08 a 14/09",
+      "barra": {
+        "original": 12,
+        "nature": 6,
+        "sache": 17,
+        "total": 35
       },
       "recreio": {
         "original": 0,
@@ -682,6 +701,48 @@
       "store": "recreio",
       "status": "sem_abordagem",
       "motivo": "feriado"
+    },
+    {
+      "date": "2026-09-08",
+      "store": "barra",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-09-09",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 10
+    },
+    {
+      "date": "2026-09-10",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 6
+    },
+    {
+      "date": "2026-09-11",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 2
+    },
+    {
+      "date": "2026-09-12",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 8
+    },
+    {
+      "date": "2026-09-13",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-09-14",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 9,
+      "obs": "acumula 13+14/09"
     }
   ],
   "daily_form": [
@@ -1526,6 +1587,20 @@
       "obs": "Sentem falta do sachê"
     },
     {
+      "timestamp": "2026-09-01T16:26:17",
+      "date": "2026-09-01",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 46,
+      "abordagens_estimated": false,
+      "degustacoes": 46,
+      "previsao_total": 2,
+      "previsao_original": 0,
+      "previsao_nature": 1,
+      "previsao_sache": 1,
+      "obs": "....."
+    },
+    {
       "timestamp": "2026-09-01T15:54:50.827000",
       "date": "2026-09-01",
       "store": "recreio",
@@ -1538,6 +1613,90 @@
       "previsao_nature": 0,
       "previsao_sache": 0,
       "obs": "Todos os produtos esgotados nas prateleiras"
+    },
+    {
+      "timestamp": "2026-09-03T16:04:05",
+      "date": "2026-09-03",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 50,
+      "abordagens_estimated": false,
+      "degustacoes": 50,
+      "previsao_total": 6,
+      "previsao_original": 0,
+      "previsao_nature": 1,
+      "previsao_sache": 5,
+      "obs": ".."
+    },
+    {
+      "timestamp": "2026-09-04T16:07:48",
+      "date": "2026-09-04",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 50,
+      "abordagens_estimated": false,
+      "degustacoes": 49,
+      "previsao_total": 4,
+      "previsao_original": 0,
+      "previsao_nature": 1,
+      "previsao_sache": 3,
+      "obs": "..."
+    },
+    {
+      "timestamp": "2026-09-05T16:05:07",
+      "date": "2026-09-05",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 160,
+      "abordagens_estimated": false,
+      "degustacoes": 155,
+      "previsao_total": 8,
+      "previsao_original": 2,
+      "previsao_nature": 0,
+      "previsao_sache": 6,
+      "obs": "..."
+    },
+    {
+      "timestamp": "2026-09-09T16:05:08",
+      "date": "2026-09-09",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 53,
+      "abordagens_estimated": false,
+      "degustacoes": 52,
+      "previsao_total": 6,
+      "previsao_original": 1,
+      "previsao_nature": 1,
+      "previsao_sache": 4,
+      "obs": "..."
+    },
+    {
+      "timestamp": "2026-09-10T16:42:49",
+      "date": "2026-09-10",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 75,
+      "abordagens_estimated": false,
+      "degustacoes": 75,
+      "previsao_total": 6,
+      "previsao_original": 1,
+      "previsao_nature": 2,
+      "previsao_sache": 3,
+      "obs": ".."
+    },
+    {
+      "timestamp": "2026-09-11T15:09:49",
+      "date": "2026-09-11",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 80,
+      "abordagens_estimated": false,
+      "degustacoes": 79,
+      "previsao_total": 5,
+      "previsao_original": 0,
+      "previsao_nature": 2,
+      "previsao_sache": 3,
+      "obs": ".."
     }
   ]
 }
