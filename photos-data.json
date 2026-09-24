@@ -35,6 +35,10 @@
     {
       "id": "w9",
       "label": "08 a 14/09"
+    },
+    {
+      "id": "w10",
+      "label": "15 a 21/09"
     }
   ],
   "photos": [
@@ -619,6 +623,24 @@
       "weekLabel": "08 a 14/09",
       "file": "w9_11.jpg",
       "caption": "Consumidora com copo de degustação"
+    },
+    {
+      "week": "w10",
+      "weekLabel": "15 a 21/09",
+      "file": "w10_01.jpg",
+      "caption": "Consumidora degustando SupraSoy no ponto de venda"
+    },
+    {
+      "week": "w10",
+      "weekLabel": "15 a 21/09",
+      "file": "w10_02.jpg",
+      "caption": "Cliente (criança) com copo de degustação SupraSoy"
+    },
+    {
+      "week": "w10",
+      "weekLabel": "15 a 21/09",
+      "file": "w10_03.jpg",
+      "caption": "Ponto de degustação SupraSoy no Guanabara Barra"
     }
   ]
 }

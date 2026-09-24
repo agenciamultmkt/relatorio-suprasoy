@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-09-15",
+    "generated": "2026-09-21",
     "stores": [
       "barra",
       "recreio"
@@ -24,7 +24,8 @@
       "ALERTA: a partir de 01/09/2026, o Guanabara Recreio entrou em ruptura total (Original, Nature e Sachê simultaneamente zerados), confirmada pelo cliente para a semana inteira (01 a 07/09).",
       "A semana de 01-07/09 não teve contagem em 06/09 (domingo) nem 07/09 (feriado) — o total da semana reflete os dados até 05/09.",
       "\"Degustações servidas\" é uma métrica nova do formulário, preenchida pelas promotoras a partir de 20/08/2026 — períodos anteriores não têm esse dado.",
-      "A partir de 01/09/2026, a ação de degustação no Guanabara Recreio foi encerrada; o painel segue acompanhando apenas o Guanabara Barra a partir da semana de 08-14/09."
+      "A partir de 01/09/2026, a ação de degustação no Guanabara Recreio foi encerrada; o painel segue acompanhando apenas o Guanabara Barra a partir da semana de 08-14/09.",
+      "A demonstradora do Guanabara Barra esteve em atestado médico de 15/09 a 18/09/2026; a contagem de estoque foi mantida pela loja nesse período, mas sem degustação ativa (vendas refletem giro de prateleira). Não há dados de abordagens/previsão/degustações do formulário para a semana de 15 a 21/09 em razão do atestado — a semana foi trabalhada somente a partir da contagem de estoque, a pedido do cliente."
     ]
   },
   "weeks_real": [
@@ -182,6 +183,24 @@
         "nature": 6,
         "sache": 17,
         "total": 35
+      },
+      "recreio": {
+        "original": 0,
+        "nature": 0,
+        "sache": 0,
+        "total": 0
+      }
+    },
+    {
+      "id": "W10",
+      "start": "2026-09-15",
+      "end": "2026-09-21",
+      "label": "15 a 21/09 (15 a 18/09 sem degustação ativa — demonstradora em atestado)",
+      "barra": {
+        "original": 8,
+        "nature": 7,
+        "sache": 2,
+        "total": 17
       },
       "recreio": {
         "original": 0,
@@ -743,6 +762,52 @@
       "status": "ok",
       "vendas": 9,
       "obs": "acumula 13+14/09"
+    },
+    {
+      "date": "2026-09-15",
+      "store": "barra",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-09-16",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 4,
+      "obs": "demonstradora em atestado médico; venda por giro de prateleira, sem degustação ativa"
+    },
+    {
+      "date": "2026-09-17",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 3,
+      "obs": "demonstradora em atestado médico; venda por giro de prateleira, sem degustação ativa"
+    },
+    {
+      "date": "2026-09-18",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 6,
+      "obs": "último dia de atestado da demonstradora; venda por giro de prateleira, sem degustação ativa"
+    },
+    {
+      "date": "2026-09-19",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 3,
+      "obs": "demonstradora retornou do atestado; degustação ativa retomada"
+    },
+    {
+      "date": "2026-09-20",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-09-21",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 1,
+      "obs": "acumula 20+21/09"
     }
   ],
   "daily_form": [
