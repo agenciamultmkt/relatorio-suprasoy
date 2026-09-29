@@ -39,6 +39,10 @@
     {
       "id": "w10",
       "label": "15 a 21/09"
+    },
+    {
+      "id": "w11",
+      "label": "22 a 28/09"
     }
   ],
   "photos": [
@@ -641,6 +645,66 @@
       "weekLabel": "15 a 21/09",
       "file": "w10_03.jpg",
       "caption": "Ponto de degustação SupraSoy no Guanabara Barra"
+    },
+    {
+      "week": "w11",
+      "weekLabel": "22 a 28/09",
+      "file": "w11_01.jpg",
+      "caption": "Cliente experimentando o SupraSoy Original"
+    },
+    {
+      "week": "w11",
+      "weekLabel": "22 a 28/09",
+      "file": "w11_02.jpg",
+      "caption": "Atendimento à consumidora no ponto de degustação"
+    },
+    {
+      "week": "w11",
+      "weekLabel": "22 a 28/09",
+      "file": "w11_03.jpg",
+      "caption": "Cliente degustando SupraSoy"
+    },
+    {
+      "week": "w11",
+      "weekLabel": "22 a 28/09",
+      "file": "w11_04.jpg",
+      "caption": "Consumidora com o copinho de degustação"
+    },
+    {
+      "week": "w11",
+      "weekLabel": "22 a 28/09",
+      "file": "w11_05.jpg",
+      "caption": "Cliente satisfeito após a degustação"
+    },
+    {
+      "week": "w11",
+      "weekLabel": "22 a 28/09",
+      "file": "w11_06.jpg",
+      "caption": "Consumidora com o copinho SupraSoy"
+    },
+    {
+      "week": "w11",
+      "weekLabel": "22 a 28/09",
+      "file": "w11_07.jpg",
+      "caption": "Cliente com a lata do produto em pó"
+    },
+    {
+      "week": "w11",
+      "weekLabel": "22 a 28/09",
+      "file": "w11_08.jpg",
+      "caption": "Consumidora com o livro de receitas SupraSoy"
+    },
+    {
+      "week": "w11",
+      "weekLabel": "22 a 28/09",
+      "file": "w11_09.jpg",
+      "caption": "Cliente degustando o produto"
+    },
+    {
+      "week": "w11",
+      "weekLabel": "22 a 28/09",
+      "file": "w11_10.jpg",
+      "caption": "Colaborador da loja com o copinho de degustação"
     }
   ]
 }
