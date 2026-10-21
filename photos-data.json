@@ -47,6 +47,10 @@
     {
       "id": "w12",
       "label": "06 a 10/10"
+    },
+    {
+      "id": "w13",
+      "label": "13 a 17/10"
     }
   ],
   "photos": [
@@ -799,6 +803,66 @@
       "weekLabel": "06 a 10/10",
       "file": "w12_15.jpg",
       "caption": "Cliente degustando o copinho de SupraSoy"
+    },
+    {
+      "week": "w13",
+      "weekLabel": "13 a 17/10",
+      "file": "w13_01.jpg",
+      "caption": "Conversão de vendas após degustação — cliente com os produtos SupraSoy no carrinho de compras"
+    },
+    {
+      "week": "w13",
+      "weekLabel": "13 a 17/10",
+      "file": "w13_02.jpg",
+      "caption": "Conversão de vendas após degustação — consumidora com o produto já escolhido para a compra"
+    },
+    {
+      "week": "w13",
+      "weekLabel": "13 a 17/10",
+      "file": "w13_03.jpg",
+      "caption": "Conversão de vendas após degustação — cliente satisfeita segurando o copinho e o produto"
+    },
+    {
+      "week": "w13",
+      "weekLabel": "13 a 17/10",
+      "file": "w13_04.jpg",
+      "caption": "Conversão de vendas após degustação — consumidora com a lata de SupraSoy Nature em mãos"
+    },
+    {
+      "week": "w13",
+      "weekLabel": "13 a 17/10",
+      "file": "w13_05.jpg",
+      "caption": "Conversão de vendas após degustação — cliente com o livro de receitas e o produto no carrinho"
+    },
+    {
+      "week": "w13",
+      "weekLabel": "13 a 17/10",
+      "file": "w13_06.jpg",
+      "caption": "Conversão de vendas após degustação — cliente com o SupraSoy já no carrinho de compras"
+    },
+    {
+      "week": "w13",
+      "weekLabel": "13 a 17/10",
+      "file": "w13_07.jpg",
+      "caption": "Conversão de vendas após degustação — consumidora com o produto escolhido na área de padaria"
+    },
+    {
+      "week": "w13",
+      "weekLabel": "13 a 17/10",
+      "file": "w13_08.jpg",
+      "caption": "Conversão de vendas após degustação — atendimento no ponto que leva à compra do produto"
+    },
+    {
+      "week": "w13",
+      "weekLabel": "13 a 17/10",
+      "file": "w13_09.jpg",
+      "caption": "Conversão de vendas após degustação — cliente degustando e avaliando o produto no ponto"
+    },
+    {
+      "week": "w13",
+      "weekLabel": "13 a 17/10",
+      "file": "w13_10.jpg",
+      "caption": "Conversão de vendas após degustação — atendimento personalizado que incentiva a compra"
     }
   ]
 }

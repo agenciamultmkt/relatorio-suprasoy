@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-10-13",
+    "generated": "2026-10-20",
     "stores": [
       "barra",
       "recreio"
@@ -28,7 +28,8 @@
       "A demonstradora do Guanabara Barra esteve em atestado médico de 15/09 a 18/09/2026; a contagem de estoque foi mantida pela loja nesse período, mas sem degustação ativa (vendas refletem giro de prateleira). Não há dados de abordagens/previsão/degustações do formulário para a semana de 15 a 21/09 em razão do atestado — a semana foi trabalhada somente a partir da contagem de estoque, a pedido do cliente.",
       "Semana de 22 a 28/09: demonstradora retomou o preenchimento do formulário (abordagens e degustações) de 22 a 26/09; não há registro para 27/09 (domingo) nem 28/09. Vendas reais calculadas normalmente pela contagem de estoque, sem reposições detectadas.",
       "Semana de 29/09 a 05/10: contagem de estoque completa (7 dias), com acúmulo em 05/10 referente a 04/10 (domingo, sem contagem) + 05/10. Vendas reais calculadas normalmente pela contagem de estoque, sem reposições detectadas.",
-      "Semana de 06 a 10/10: 5 dias de contagem (terça a sábado, sem domingo no intervalo). Vendas reais calculadas pela contagem de estoque, sem reposições detectadas. Formulário preenchido normalmente pela demonstradora Fabiola todos os dias."
+      "Semana de 06 a 10/10: 5 dias de contagem (terça a sábado, sem domingo no intervalo). Vendas reais calculadas pela contagem de estoque, sem reposições detectadas. Formulário preenchido normalmente pela demonstradora Fabiola todos os dias.",
+      "Semana de 13 a 17/10: 5 dias de contagem (terça a sábado), seguindo o novo padrão de contagem sem domingo/segunda que começou em 06/10. Vendas reais calculadas pela contagem de estoque, sem reposições detectadas. Formulário preenchido normalmente pela demonstradora Fabiola todos os dias."
     ]
   },
   "weeks_real": [
@@ -258,6 +259,24 @@
         "nature": 4,
         "sache": 1,
         "total": 10
+      },
+      "recreio": {
+        "original": 0,
+        "nature": 0,
+        "sache": 0,
+        "total": 0
+      }
+    },
+    {
+      "id": "W14",
+      "start": "2026-10-13",
+      "end": "2026-10-17",
+      "label": "13 a 17/10",
+      "barra": {
+        "original": 7,
+        "nature": 11,
+        "sache": 1,
+        "total": 19
       },
       "recreio": {
         "original": 0,
@@ -978,6 +997,35 @@
       "store": "barra",
       "status": "ok",
       "vendas": 3
+    },
+    {
+      "date": "2026-10-13",
+      "store": "barra",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-10-14",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 4
+    },
+    {
+      "date": "2026-10-15",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 7
+    },
+    {
+      "date": "2026-10-16",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 3
+    },
+    {
+      "date": "2026-10-17",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 5
     }
   ],
   "daily_form": [
@@ -2127,6 +2175,71 @@
       "previsao_sache": 3,
       "obs": "…",
       "previsao_total": 5
+    },
+    {
+      "timestamp": "2026-10-13T16:31:22",
+      "date": "2026-10-13",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 58,
+      "degustacoes": 58,
+      "previsao_original": 0,
+      "previsao_nature": 1,
+      "previsao_sache": 2,
+      "obs": "..",
+      "previsao_total": 3
+    },
+    {
+      "timestamp": "2026-10-14T15:47:58",
+      "date": "2026-10-14",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 56,
+      "degustacoes": 56,
+      "previsao_original": 1,
+      "previsao_nature": 1,
+      "previsao_sache": 2,
+      "obs": "…",
+      "previsao_total": 4
+    },
+    {
+      "timestamp": "2026-10-15T15:40:07",
+      "date": "2026-10-15",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 63,
+      "degustacoes": 63,
+      "previsao_original": 0,
+      "previsao_nature": 1,
+      "previsao_sache": 2,
+      "obs": "…",
+      "previsao_total": 3
+    },
+    {
+      "timestamp": "2026-10-16T16:39:16",
+      "date": "2026-10-16",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 85,
+      "degustacoes": 84,
+      "previsao_original": 0,
+      "previsao_nature": 1,
+      "previsao_sache": 3,
+      "obs": "..",
+      "previsao_total": 4
+    },
+    {
+      "timestamp": "2026-10-17T16:04:36",
+      "date": "2026-10-17",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 95,
+      "degustacoes": 94,
+      "previsao_original": 1,
+      "previsao_nature": 0,
+      "previsao_sache": 2,
+      "obs": "…",
+      "previsao_total": 3
     }
   ]
 }
