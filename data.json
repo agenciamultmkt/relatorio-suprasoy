@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-09-28",
+    "generated": "2026-10-13",
     "stores": [
       "barra",
       "recreio"
@@ -26,7 +26,9 @@
       "\"Degustações servidas\" é uma métrica nova do formulário, preenchida pelas promotoras a partir de 20/08/2026 — períodos anteriores não têm esse dado.",
       "A partir de 01/09/2026, a ação de degustação no Guanabara Recreio foi encerrada; o painel segue acompanhando apenas o Guanabara Barra a partir da semana de 08-14/09.",
       "A demonstradora do Guanabara Barra esteve em atestado médico de 15/09 a 18/09/2026; a contagem de estoque foi mantida pela loja nesse período, mas sem degustação ativa (vendas refletem giro de prateleira). Não há dados de abordagens/previsão/degustações do formulário para a semana de 15 a 21/09 em razão do atestado — a semana foi trabalhada somente a partir da contagem de estoque, a pedido do cliente.",
-      "Semana de 22 a 28/09: demonstradora retomou o preenchimento do formulário (abordagens e degustações) de 22 a 26/09; não há registro para 27/09 (domingo) nem 28/09. Vendas reais calculadas normalmente pela contagem de estoque, sem reposições detectadas."
+      "Semana de 22 a 28/09: demonstradora retomou o preenchimento do formulário (abordagens e degustações) de 22 a 26/09; não há registro para 27/09 (domingo) nem 28/09. Vendas reais calculadas normalmente pela contagem de estoque, sem reposições detectadas.",
+      "Semana de 29/09 a 05/10: contagem de estoque completa (7 dias), com acúmulo em 05/10 referente a 04/10 (domingo, sem contagem) + 05/10. Vendas reais calculadas normalmente pela contagem de estoque, sem reposições detectadas.",
+      "Semana de 06 a 10/10: 5 dias de contagem (terça a sábado, sem domingo no intervalo). Vendas reais calculadas pela contagem de estoque, sem reposições detectadas. Formulário preenchido normalmente pela demonstradora Fabiola todos os dias."
     ]
   },
   "weeks_real": [
@@ -227,6 +229,42 @@
         "sache": 0,
         "total": 0
       }
+    },
+    {
+      "id": "W12",
+      "start": "2026-09-29",
+      "end": "2026-10-05",
+      "label": "29/09 a 05/10",
+      "barra": {
+        "original": 10,
+        "nature": 7,
+        "sache": 4,
+        "total": 21
+      },
+      "recreio": {
+        "original": 0,
+        "nature": 0,
+        "sache": 0,
+        "total": 0
+      }
+    },
+    {
+      "id": "W13",
+      "start": "2026-10-06",
+      "end": "2026-10-10",
+      "label": "06 a 10/10",
+      "barra": {
+        "original": 5,
+        "nature": 4,
+        "sache": 1,
+        "total": 10
+      },
+      "recreio": {
+        "original": 0,
+        "nature": 0,
+        "sache": 0,
+        "total": 0
+      }
     }
   ],
   "daily_coverage": [
@@ -236,10 +274,21 @@
       "status": "inicio"
     },
     {
+      "date": "2026-07-28",
+      "store": "recreio",
+      "status": "inicio"
+    },
+    {
       "date": "2026-07-29",
       "store": "barra",
       "status": "ok",
       "vendas": 8
+    },
+    {
+      "date": "2026-07-29",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 0
     },
     {
       "date": "2026-07-30",
@@ -248,10 +297,22 @@
       "vendas": 7
     },
     {
+      "date": "2026-07-30",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 1
+    },
+    {
       "date": "2026-07-31",
       "store": "barra",
       "status": "ok",
       "vendas": 9
+    },
+    {
+      "date": "2026-07-31",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 0
     },
     {
       "date": "2026-08-01",
@@ -260,8 +321,20 @@
       "vendas": 9
     },
     {
+      "date": "2026-08-01",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 15
+    },
+    {
       "date": "2026-08-02",
       "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-02",
+      "store": "recreio",
       "status": "sem_abordagem",
       "motivo": "domingo"
     },
@@ -273,8 +346,20 @@
       "obs": "acumula 02+03/08"
     },
     {
+      "date": "2026-08-03",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 4,
+      "obs": "acumula 02+03/08"
+    },
+    {
       "date": "2026-08-04",
       "store": "barra",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-08-04",
+      "store": "recreio",
       "status": "inicio"
     },
     {
@@ -284,10 +369,22 @@
       "vendas": 3
     },
     {
+      "date": "2026-08-05",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 11
+    },
+    {
       "date": "2026-08-06",
       "store": "barra",
       "status": "ok",
       "vendas": 3
+    },
+    {
+      "date": "2026-08-06",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 13
     },
     {
       "date": "2026-08-07",
@@ -296,14 +393,32 @@
       "vendas": 5
     },
     {
+      "date": "2026-08-07",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 6
+    },
+    {
       "date": "2026-08-08",
       "store": "barra",
       "status": "ok",
       "vendas": 3
     },
     {
+      "date": "2026-08-08",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 6
+    },
+    {
       "date": "2026-08-09",
       "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-09",
+      "store": "recreio",
       "status": "sem_abordagem",
       "motivo": "domingo"
     },
@@ -315,8 +430,20 @@
       "obs": "acumula 09+10/08"
     },
     {
+      "date": "2026-08-10",
+      "store": "recreio",
+      "status": "ok",
+      "vendas": 19,
+      "obs": "acumula 09+10/08"
+    },
+    {
       "date": "2026-08-11",
       "store": "barra",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-08-11",
+      "store": "recreio",
       "status": "inicio"
     },
     {
@@ -326,130 +453,16 @@
       "vendas": 8
     },
     {
-      "date": "2026-08-13",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 9
-    },
-    {
-      "date": "2026-08-14",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 3
-    },
-    {
-      "date": "2026-08-15",
-      "store": "barra",
-      "status": "sem_abordagem",
-      "motivo": "feriado"
-    },
-    {
-      "date": "2026-08-16",
-      "store": "barra",
-      "status": "sem_abordagem",
-      "motivo": "domingo"
-    },
-    {
-      "date": "2026-08-17",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 14,
-      "obs": "acumula 16+17/08"
-    },
-    {
-      "date": "2026-07-28",
-      "store": "recreio",
-      "status": "inicio"
-    },
-    {
-      "date": "2026-07-29",
-      "store": "recreio",
-      "status": "ok",
-      "vendas": 0
-    },
-    {
-      "date": "2026-07-30",
-      "store": "recreio",
-      "status": "ok",
-      "vendas": 1
-    },
-    {
-      "date": "2026-07-31",
-      "store": "recreio",
-      "status": "ok",
-      "vendas": 0
-    },
-    {
-      "date": "2026-08-01",
-      "store": "recreio",
-      "status": "ok",
-      "vendas": 15
-    },
-    {
-      "date": "2026-08-02",
-      "store": "recreio",
-      "status": "sem_abordagem",
-      "motivo": "domingo"
-    },
-    {
-      "date": "2026-08-03",
-      "store": "recreio",
-      "status": "ok",
-      "vendas": 4,
-      "obs": "acumula 02+03/08"
-    },
-    {
-      "date": "2026-08-04",
-      "store": "recreio",
-      "status": "inicio"
-    },
-    {
-      "date": "2026-08-05",
-      "store": "recreio",
-      "status": "ok",
-      "vendas": 11
-    },
-    {
-      "date": "2026-08-06",
-      "store": "recreio",
-      "status": "ok",
-      "vendas": 13
-    },
-    {
-      "date": "2026-08-07",
-      "store": "recreio",
-      "status": "ok",
-      "vendas": 6
-    },
-    {
-      "date": "2026-08-08",
-      "store": "recreio",
-      "status": "ok",
-      "vendas": 6
-    },
-    {
-      "date": "2026-08-09",
-      "store": "recreio",
-      "status": "sem_abordagem",
-      "motivo": "domingo"
-    },
-    {
-      "date": "2026-08-10",
-      "store": "recreio",
-      "status": "ok",
-      "vendas": 19,
-      "obs": "acumula 09+10/08"
-    },
-    {
-      "date": "2026-08-11",
-      "store": "recreio",
-      "status": "inicio"
-    },
-    {
       "date": "2026-08-12",
       "store": "recreio",
       "status": "ok",
       "vendas": 12
+    },
+    {
+      "date": "2026-08-13",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 9
     },
     {
       "date": "2026-08-13",
@@ -459,9 +472,21 @@
     },
     {
       "date": "2026-08-14",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 3
+    },
+    {
+      "date": "2026-08-14",
       "store": "recreio",
       "status": "ok",
       "vendas": 4
+    },
+    {
+      "date": "2026-08-15",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "feriado"
     },
     {
       "date": "2026-08-15",
@@ -471,9 +496,22 @@
     },
     {
       "date": "2026-08-16",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-16",
       "store": "recreio",
       "status": "sem_abordagem",
       "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-17",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 14,
+      "obs": "acumula 16+17/08"
     },
     {
       "date": "2026-08-17",
@@ -488,52 +526,27 @@
       "status": "inicio"
     },
     {
-      "date": "2026-08-19",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 6
-    },
-    {
-      "date": "2026-08-20",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 5
-    },
-    {
-      "date": "2026-08-21",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 2
-    },
-    {
-      "date": "2026-08-22",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 0
-    },
-    {
-      "date": "2026-08-23",
-      "store": "barra",
-      "status": "sem_abordagem",
-      "motivo": "domingo"
-    },
-    {
-      "date": "2026-08-24",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 14,
-      "obs": "acumula 23+24/08"
-    },
-    {
       "date": "2026-08-18",
       "store": "recreio",
       "status": "inicio"
     },
     {
       "date": "2026-08-19",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 6
+    },
+    {
+      "date": "2026-08-19",
       "store": "recreio",
       "status": "ok",
       "vendas": 1
+    },
+    {
+      "date": "2026-08-20",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 5
     },
     {
       "date": "2026-08-20",
@@ -544,9 +557,21 @@
     },
     {
       "date": "2026-08-21",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 2
+    },
+    {
+      "date": "2026-08-21",
       "store": "recreio",
       "status": "ok",
       "vendas": 9
+    },
+    {
+      "date": "2026-08-22",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 0
     },
     {
       "date": "2026-08-22",
@@ -556,9 +581,22 @@
     },
     {
       "date": "2026-08-23",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-23",
       "store": "recreio",
       "status": "sem_abordagem",
       "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-24",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 14,
+      "obs": "acumula 23+24/08"
     },
     {
       "date": "2026-08-24",
@@ -573,47 +611,15 @@
       "status": "inicio"
     },
     {
+      "date": "2026-08-25",
+      "store": "recreio",
+      "status": "inicio"
+    },
+    {
       "date": "2026-08-26",
       "store": "barra",
       "status": "ok",
       "vendas": 8
-    },
-    {
-      "date": "2026-08-27",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 16
-    },
-    {
-      "date": "2026-08-28",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 4,
-      "obs": "Sachê teve pequena reposição (+1un) em 28/08; não contada como venda"
-    },
-    {
-      "date": "2026-08-29",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 15
-    },
-    {
-      "date": "2026-08-30",
-      "store": "barra",
-      "status": "sem_abordagem",
-      "motivo": "domingo"
-    },
-    {
-      "date": "2026-08-31",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 10,
-      "obs": "acumula 30+31/08"
-    },
-    {
-      "date": "2026-08-25",
-      "store": "recreio",
-      "status": "inicio"
     },
     {
       "date": "2026-08-26",
@@ -623,9 +629,22 @@
     },
     {
       "date": "2026-08-27",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 16
+    },
+    {
+      "date": "2026-08-27",
       "store": "recreio",
       "status": "ok",
       "vendas": 1
+    },
+    {
+      "date": "2026-08-28",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 4,
+      "obs": "Sachê teve pequena reposição (+1un) em 28/08; não contada como venda"
     },
     {
       "date": "2026-08-28",
@@ -635,15 +654,34 @@
     },
     {
       "date": "2026-08-29",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 15
+    },
+    {
+      "date": "2026-08-29",
       "store": "recreio",
       "status": "ok",
       "vendas": 4
     },
     {
       "date": "2026-08-30",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-30",
       "store": "recreio",
       "status": "sem_abordagem",
       "motivo": "domingo"
+    },
+    {
+      "date": "2026-08-31",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 10,
+      "obs": "acumula 30+31/08"
     },
     {
       "date": "2026-08-31",
@@ -658,42 +696,6 @@
       "status": "inicio"
     },
     {
-      "date": "2026-09-02",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 0
-    },
-    {
-      "date": "2026-09-03",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 7
-    },
-    {
-      "date": "2026-09-04",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 12
-    },
-    {
-      "date": "2026-09-05",
-      "store": "barra",
-      "status": "ok",
-      "vendas": 4
-    },
-    {
-      "date": "2026-09-06",
-      "store": "barra",
-      "status": "sem_abordagem",
-      "motivo": "domingo"
-    },
-    {
-      "date": "2026-09-07",
-      "store": "barra",
-      "status": "sem_abordagem",
-      "motivo": "feriado"
-    },
-    {
       "date": "2026-09-01",
       "store": "recreio",
       "status": "ok",
@@ -702,10 +704,22 @@
     },
     {
       "date": "2026-09-02",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 0
+    },
+    {
+      "date": "2026-09-02",
       "store": "recreio",
       "status": "ok",
       "vendas": 0,
       "obs": "ruptura total"
+    },
+    {
+      "date": "2026-09-03",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 7
     },
     {
       "date": "2026-09-03",
@@ -716,10 +730,22 @@
     },
     {
       "date": "2026-09-04",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 12
+    },
+    {
+      "date": "2026-09-04",
       "store": "recreio",
       "status": "ok",
       "vendas": 0,
       "obs": "ruptura total"
+    },
+    {
+      "date": "2026-09-05",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 4
     },
     {
       "date": "2026-09-05",
@@ -730,9 +756,21 @@
     },
     {
       "date": "2026-09-06",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-09-06",
       "store": "recreio",
       "status": "sem_abordagem",
       "motivo": "domingo"
+    },
+    {
+      "date": "2026-09-07",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "feriado"
     },
     {
       "date": "2026-09-07",
@@ -869,6 +907,77 @@
       "status": "ok",
       "vendas": 14,
       "obs": "acumula 27+28/09"
+    },
+    {
+      "date": "2026-09-29",
+      "store": "barra",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-09-30",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 3
+    },
+    {
+      "date": "2026-10-01",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 2
+    },
+    {
+      "date": "2026-10-02",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 2
+    },
+    {
+      "date": "2026-10-03",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 5
+    },
+    {
+      "date": "2026-10-04",
+      "store": "barra",
+      "status": "sem_abordagem",
+      "motivo": "domingo"
+    },
+    {
+      "date": "2026-10-05",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 9,
+      "obs": "acumula 04+05/10"
+    },
+    {
+      "date": "2026-10-06",
+      "store": "barra",
+      "status": "inicio"
+    },
+    {
+      "date": "2026-10-07",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 2
+    },
+    {
+      "date": "2026-10-08",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 4
+    },
+    {
+      "date": "2026-10-09",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 1
+    },
+    {
+      "date": "2026-10-10",
+      "store": "barra",
+      "status": "ok",
+      "vendas": 3
     }
   ],
   "daily_form": [
@@ -1888,6 +1997,136 @@
       "previsao_sache": 2,
       "obs": "..",
       "previsao_total": 3
+    },
+    {
+      "timestamp": "2026-09-29T16:36:32",
+      "date": "2026-09-29",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 76,
+      "degustacoes": 76,
+      "previsao_original": 1,
+      "previsao_nature": 0,
+      "previsao_sache": 3,
+      "obs": "…",
+      "previsao_total": 4
+    },
+    {
+      "timestamp": "2026-09-30T15:10:06",
+      "date": "2026-09-30",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 90,
+      "degustacoes": 90,
+      "previsao_original": 1,
+      "previsao_nature": 1,
+      "previsao_sache": 3,
+      "obs": "..",
+      "previsao_total": 5
+    },
+    {
+      "timestamp": "2026-10-01T16:25:36",
+      "date": "2026-10-01",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 89,
+      "degustacoes": 89,
+      "previsao_original": 1,
+      "previsao_nature": 1,
+      "previsao_sache": 1,
+      "obs": "…",
+      "previsao_total": 3
+    },
+    {
+      "timestamp": "2026-10-02T17:21:21",
+      "date": "2026-10-02",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 98,
+      "degustacoes": 98,
+      "previsao_original": 2,
+      "previsao_nature": 2,
+      "previsao_sache": 3,
+      "obs": "..",
+      "previsao_total": 7
+    },
+    {
+      "timestamp": "2026-10-03T16:06:05",
+      "date": "2026-10-03",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 115,
+      "degustacoes": 115,
+      "previsao_original": 3,
+      "previsao_nature": 0,
+      "previsao_sache": 3,
+      "obs": "..",
+      "previsao_total": 6
+    },
+    {
+      "timestamp": "2026-10-06T14:56:51",
+      "date": "2026-10-06",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 54,
+      "degustacoes": 54,
+      "previsao_original": 0,
+      "previsao_nature": 0,
+      "previsao_sache": 4,
+      "obs": "…",
+      "previsao_total": 4
+    },
+    {
+      "timestamp": "2026-10-07T16:08:01",
+      "date": "2026-10-07",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 96,
+      "degustacoes": 96,
+      "previsao_original": 0,
+      "previsao_nature": 1,
+      "previsao_sache": 2,
+      "obs": "..",
+      "previsao_total": 3
+    },
+    {
+      "timestamp": "2026-10-08T16:24:11",
+      "date": "2026-10-08",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 101,
+      "degustacoes": 101,
+      "previsao_original": 0,
+      "previsao_nature": 0,
+      "previsao_sache": 3,
+      "obs": "…",
+      "previsao_total": 3
+    },
+    {
+      "timestamp": "2026-10-09T16:17:08",
+      "date": "2026-10-09",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 100,
+      "degustacoes": 100,
+      "previsao_original": 1,
+      "previsao_nature": 2,
+      "previsao_sache": 5,
+      "obs": "..",
+      "previsao_total": 8
+    },
+    {
+      "timestamp": "2026-10-10T16:14:23",
+      "date": "2026-10-10",
+      "store": "barra",
+      "demonstrator": "FABIOLA",
+      "abordagens": 108,
+      "degustacoes": 108,
+      "previsao_original": 1,
+      "previsao_nature": 1,
+      "previsao_sache": 3,
+      "obs": "…",
+      "previsao_total": 5
     }
   ]
 }

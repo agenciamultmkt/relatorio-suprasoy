@@ -43,6 +43,10 @@
     {
       "id": "w11",
       "label": "22 a 28/09"
+    },
+    {
+      "id": "w12",
+      "label": "06 a 10/10"
     }
   ],
   "photos": [
@@ -705,6 +709,96 @@
       "weekLabel": "22 a 28/09",
       "file": "w11_10.jpg",
       "caption": "Colaborador da loja com o copinho de degustação"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_01.jpg",
+      "caption": "Cliente degustando SupraSoy no ponto de degustação"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_02.jpg",
+      "caption": "Cliente com o sachê SupraSoy Nature"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_03.jpg",
+      "caption": "Consumidora apresentando o sachê SupraSoy"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_04.jpg",
+      "caption": "Cliente satisfeito após degustar o produto"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_05.jpg",
+      "caption": "Cliente degustando o copinho de SupraSoy"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_06.jpg",
+      "caption": "Consumidora experimentando o SupraSoy Nature"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_07.jpg",
+      "caption": "Colaboradora da loja no ponto de degustação"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_08.jpg",
+      "caption": "Atendimento a consumidoras no ponto de degustação"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_09.jpg",
+      "caption": "Consumidora recebendo atendimento da demonstradora"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_10.jpg",
+      "caption": "Promotora apresentando o produto à cliente"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_11.jpg",
+      "caption": "Atendimento a cliente idosa no ponto de degustação"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_12.jpg",
+      "caption": "Consumidora recebendo o copinho de degustação"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_13.jpg",
+      "caption": "Cliente com a embalagem do SupraSoy"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_14.jpg",
+      "caption": "Consumidora com o produto no carrinho de compras"
+    },
+    {
+      "week": "w12",
+      "weekLabel": "06 a 10/10",
+      "file": "w12_15.jpg",
+      "caption": "Cliente degustando o copinho de SupraSoy"
     }
   ]
 }
