@@ -36,8 +36,8 @@
   <section class="hero">
     <div class="hero-inner">
       <p class="eyebrow">Guanabara Barra &amp; Recreio</p>
-      <h1>Ação de degustação<br><span class="hero-accent">semana a semana.</span></h1>
-      <p class="hero-sub">Cada número aqui começou como um traço no papel de uma promotora, na loja, contando pote a pote. Este painel junta essa contagem de campo com o estoque real do ponto de venda — para separar o que foi <em>anunciado</em> do que foi <em>vendido de fato</em>.</p>
+      <h1>Degustação SupraSoy<br><span class="hero-accent">Evolução da ação.</span></h1>
+      <p class="hero-sub">Este painel junta essa contagem de campo com o estoque real do ponto de venda, separando o que foi <em>anunciado</em> do que foi <em>vendido de fato</em>.</p>
     </div>
     <div class="hero-photo">
       <img src="assets/produtos-suprasoy.png" alt="Latas SupraSoy Nature e Original">
@@ -61,6 +61,7 @@
         <button class="pill" data-period="jul">Julho</button>
         <button class="pill" data-period="ago">Agosto</button>
         <button class="pill" data-period="set">Setembro</button>
+        <button class="pill" data-period="out">Outubro</button>
       </div>
     </div>
   </section>
@@ -95,18 +96,18 @@
 
   <section class="panel">
     <div class="panel-head">
-      <h2>Evolução semanal — vendas reais</h2>
-      <p class="panel-sub">Cada barra é uma semana de contagem de estoque (terça a segunda). Passe o mouse para ver o detalhe por SKU.</p>
+      <h2>Evolução mensal — vendas reais</h2>
+      <p class="panel-sub">Cada barra é um mês, empilhada por SKU. Cada semana de contagem conta inteira no mês em que cai a maioria dos dias. Julho começa em 14/07 e o mês corrente está em andamento, então os meses não são totalmente comparáveis. Passe o mouse para ver o detalhe.</p>
     </div>
     <div class="chart-box chart-tall">
-      <canvas id="chartWeekly"></canvas>
+      <canvas id="chartMonthly"></canvas>
     </div>
   </section>
 
   <section class="panel">
     <div class="panel-head">
-      <h2>Previsão × Real, por semana</h2>
-      <p class="panel-sub">A previsão soma só os dias em que o formulário foi respondido naquela semana — em semanas com cobertura parcial, o valor fica artificialmente baixo (não é sinal de subestimação real). Barras cinzas: nenhum formulário preenchido naquela semana/loja.</p>
+      <h2>Previsão × Real, por mês</h2>
+      <p class="panel-sub">A previsão soma os dias em que o formulário foi respondido naquele mês; as vendas reais vêm da contagem de estoque, por semana. Em meses com cobertura parcial do formulário, a previsão fica artificialmente baixa.</p>
     </div>
     <div class="chart-box chart-tall">
       <canvas id="chartForecast"></canvas>
@@ -120,6 +121,16 @@
     </div>
     <div class="chart-box chart-box-centered">
       <canvas id="chartMix"></canvas>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>Evolução semanal — vendas reais</h2>
+      <p class="panel-sub">Cada barra é uma semana de contagem de estoque. Passe o mouse para ver o detalhe.</p>
+    </div>
+    <div class="chart-box chart-tall">
+      <canvas id="chartWeekly"></canvas>
     </div>
   </section>
 

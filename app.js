@@ -61,9 +61,14 @@
     }
     return count;
   }
+  const MONTHS = { 7: "jul", 8: "ago", 9: "set", 10: "out" };
+  const MONTH_LABELS = { jul: "Julho", ago: "Agosto", set: "Setembro", out: "Outubro" };
+  const MONTH_ORDER = ["jul", "ago", "set", "out"];
+  // Semana inteira vai para o mês em que cai a maioria dos dias (empate: mês anterior).
   function weekMonth(week) {
-    const counts = { jul: dayCountInMonth(week.start, week.end, 7), ago: dayCountInMonth(week.start, week.end, 8), set: dayCountInMonth(week.start, week.end, 9) };
-    return Object.keys(counts).reduce((a, b) => (counts[a] >= counts[b] ? a : b));
+    const counts = {};
+    Object.keys(MONTHS).forEach((m) => { counts[MONTHS[m]] = dayCountInMonth(week.start, week.end, parseInt(m, 10)); });
+    return MONTH_ORDER.reduce((a, b) => (counts[a] >= counts[b] ? a : b));
   }
   function weekMatchesPeriod(week) {
     if (state.period === "all") return true;
@@ -88,7 +93,7 @@
   function dateMonthMatchesPeriod(dateISO) {
     if (state.period === "all") return true;
     const month = parseInt(dateISO.slice(5, 7), 10);
-    return (state.period === "jul" && month === 7) || (state.period === "ago" && month === 8) || (state.period === "set" && month === 9);
+    return MONTHS[month] === state.period;
   }
 
   function formSumForWeek(week, field) {
@@ -111,9 +116,10 @@
   }
   function renderAll() {
     safe(renderKPIs, "KPIs");
-    safe(renderWeeklyChart, "gráfico semanal");
+    safe(renderMonthlyChart, "gráfico mensal");
+    safe(renderForecastChart, "previsão x real mensal");
     safe(renderMixChart, "mix de produto");
-    safe(renderForecastChart, "previsão x real");
+    safe(renderWeeklyChart, "gráfico semanal");
     safe(renderTable, "tabela detalhada");
   }
 
@@ -262,25 +268,55 @@
     });
   }
 
-  // ---------- Forecast vs real ----------
-  function renderForecastChart() {
-    const weeks = filteredWeeks();
-    const stores = storesForFilter();
-    const labels = weeks.map((w) => w.label);
-    const realData = weeks.map((w) => weekTotal(w));
-    const forecastData = weeks.map((w) => {
-      let sum = 0;
-      stores.forEach((st) => { sum += formSumForWeekStore(w, st, "previsao_total").sum; });
-      return sum;
+  // ---------- Monthly evolution ----------
+  function monthTotals() {
+    const months = MONTH_ORDER.filter((m) => state.period === "all" || state.period === m);
+    const t = {};
+    months.forEach((m) => { t[m] = { original: 0, nature: 0, sache: 0, total: 0, prev: 0 }; });
+    filteredWeeks().forEach((w) => {
+      const m = weekMonth(w);
+      if (!t[m]) return;
+      ["original", "nature", "sache"].forEach((s) => { t[m][s] += weekSkuTotal(w, s); });
+      t[m].total += weekTotal(w);
     });
-    const hasForm = weeks.map((w) => stores.some((st) => formSumForWeekStore(w, st, "previsao_total").count > 0));
+    const stores = storesForFilter();
+    DATA.daily_form.forEach((rec) => {
+      if (!stores.includes(rec.store)) return;
+      if (rec.previsao_total === null || rec.previsao_total === undefined) return;
+      const m = MONTHS[parseInt(rec.date.slice(5, 7), 10)];
+      if (t[m]) t[m].prev += rec.previsao_total;
+    });
+    return { months, t };
+  }
 
+  function renderMonthlyChart() {
+    const { months, t } = monthTotals();
+    const opts = baseBarOptions("Unidades vendidas");
+    opts.scales.x.stacked = true;
+    opts.scales.y.stacked = true;
+    opts.plugins.tooltip.callbacks = {
+      footer: (items) => "Total: " + items.reduce((s, i) => s + i.parsed.y, 0),
+    };
+    renderChart("chartMonthly", "bar", {
+      data: {
+        labels: months.map((m) => MONTH_LABELS[m]),
+        datasets: ["original", "nature", "sache"].map((s) => ({
+          label: SKU_LABELS[s], data: months.map((m) => t[m][s]), backgroundColor: SKU_COLORS[s],
+        })),
+      },
+      options: opts,
+    });
+  }
+
+  // ---------- Forecast vs real (monthly) ----------
+  function renderForecastChart() {
+    const { months, t } = monthTotals();
     renderChart("chartForecast", "bar", {
       data: {
-        labels,
+        labels: months.map((m) => MONTH_LABELS[m]),
         datasets: [
-          { label: "Previsão (promotoras)", data: forecastData, backgroundColor: forecastData.map((v, i) => hasForm[i] ? "#F2621B" : "#EFEFEF"), borderRadius: 6 },
-          { label: "Vendas reais", data: realData, backgroundColor: "#2C3B66", borderRadius: 6 },
+          { label: "Previsão (promotoras)", data: months.map((m) => t[m].prev), backgroundColor: "#F2621B", borderRadius: 6 },
+          { label: "Vendas reais", data: months.map((m) => t[m].total), backgroundColor: "#2C3B66", borderRadius: 6 },
         ],
       },
       options: baseBarOptions("Unidades"),
